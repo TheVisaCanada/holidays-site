@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Fleet of Baarik - Private mega yacht charters. Mediterranean, Caribbean, and bespoke itineraries. TICO-registered luxury cruise experiences.">
+  <title>The Fleet | Luxury Mega Yacht Charters | Holidays by Baarik</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="../assets/css/main.css">
+  
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Luxury Mega Yacht Charters",
+    "description": "Private mega yacht charters with halal-certified dining and prayer facilities",
+    "brand": {
+      "@type": "Brand",
+      "name": "Holidays by Baarik"
+    },
+    "offers": {
+      "@type": "AggregateOffer",
+      "priceCurrency": "CAD",
+      "availability": "https://schema.org/InStock"
+    },
+    "provider": {
+      "@type": "TravelAgency",
+      "name": "Baarik Travel & Tours Inc.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1965 Britannia Road West",
+        "addressLocality": "Mississauga",
+        "addressRegion": "ON",
+        "postalCode": "L5M 4Y7",
+        "addressCountry": "CA"
+      }
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div class="loading-screen">
+    <div class="loading-logo">Baarik</div>
+    <div class="loading-bar">
+      <div class="loading-bar-inner"></div>
+    </div>
+  </div>
+  
+  <!-- Scroll Progress -->
+  <div class="scroll-progress"></div>
+  
+  <!-- Custom Cursor -->
+  <div class="custom-cursor"></div>
+  
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">Baarik</a>
+      
+      <div class="nav-links">
+        <div class="nav-dropdown">
+          <a href="#" class="nav-link">The Experience</a>
+          <div class="dropdown-menu">
+            <a href="/cruises/" class="dropdown-item">Cruises</a>
+            <a href="/weddings/" class="dropdown-item">Weddings</a>
+            <a href="/packages/" class="dropdown-item">Packages</a>
+            <a href="/bespoke/" class="dropdown-item">Bespoke</a>
+          </div>
+        </div>
+        <a href="/journal/" class="nav-link">Journal</a>
+        <a href="/about/" class="nav-link">About</a>
+        <a href="/contact/" class="nav-link">Contact</a>
+      </div>
+      
+      <div class="nav-cta">
+        <a href="tel:+16472497545" class="nav-link hidden-mobile">+1 (647) 249-7545</a>
+        <a href="/contact/" class="btn btn-azure btn-magnetic">Reserve Charter</a>
+      </div>
+      
+      <button class="mobile-menu-btn" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+  
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <a href="/cruises/" class="mobile-menu-link">Cruises</a>
+    <a href="/weddings/" class="mobile-menu-link">Weddings</a>
+    <a href="/packages/" class="mobile-menu-link">Packages</a>
+    <a href="/bespoke/" class="mobile-menu-link">Bespoke</a>
+    <a href="/journal/" class="mobile-menu-link">Journal</a>
+    <a href="/about/" class="mobile-menu-link">About</a>
+    <a href="/contact/" class="mobile-menu-link">Contact</a>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="section section-hero" id="hero">
+      <div class="hero-bg">
+        <img src="../assets/images/hero-yacht.jpg" alt="Mega yacht cruising" class="image-bg parallax-bg">
+        <div class="video-overlay"></div>
+      </div>
+      
+      <div class="hero-content">
+        <p class="section-subheading reveal" style="color: var(--azure-crystal);">The Fleet of Baarik</p>
+        <h1 class="hero-title reveal stagger-1">Private Charters<br>Beyond Imagination</h1>
+        <p class="hero-subtitle reveal stagger-2">From Feadship masterpieces to Lürssen legends. Cruise the Mediterranean, explore the Caribbean, or chart your own course to paradise.</p>
+        <div class="hero-cta-group reveal stagger-3">
+          <a href="#fleet" class="btn btn-azure btn-magnetic">Explore Fleet</a>
+          <a href="#itineraries" class="btn btn-outline btn-magnetic">View Itineraries</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fleet Overview -->
+    <section class="section py-24 bg-midnight" id="fleet">
+      <div class="container">
+        <div class="text-center mb-16">
+          <p class="section-subheading reveal" style="color: var(--azure-crystal);">Our Collection</p>
+          <h2 class="reveal stagger-1">The World's Finest Vessels</h2>
+          <p class="max-w-2xl mx-auto mt-6 reveal stagger-2">Each yacht in our fleet represents the pinnacle of maritime engineering and luxury design. All vessels feature halal-certified kitchens, prayer facilities, and dedicated prayer room spaces.</p>
+        </div>
+        
+        <!-- Yacht Cards -->
+        <div class="yacht-grid">
+          <!-- Yacht 1 -->
+          <div class="yacht-card reveal" data-cursor-text="Charter">
+            <div class="yacht-image">
+              <img src="../assets/images/hero-yacht.jpg" alt="Serenity mega yacht">
+              <div class="yacht-badge">
+                <span class="badge badge-vvip">Flagship</span>
+              </div>
+            </div>
+            <div class="yacht-content">
+              <h3>Serenity</h3>
+              <p class="yacht-type">Feadship | 95m</p>
+              <div class="yacht-specs">
+                <div class="spec">
+                  <span class="spec-value">12</span>
+                  <span class="spec-label">Guests</span>
+                </div>
+                <div class="spec">
+                  <span class="spec-value">28</span>
+                  <span class="spec-label">Crew</span>
+                </div>
+                <div class="spec">
+                  <span class="spec-value">6</span>
+                  <span class="spec-label">Cabins</span>
+                </div>
+              </div>
+              <p class="yacht-description">A masterpiece of Dutch engineering featuring a beach club, helipad, and infinity pool. The crown jewel of our fleet.</p>
+              <a href="/contact/" class="btn btn-azure">Request Charter</a>
+            </div>
+          </div>
+          
+          <!-- Yacht 2 -->
+          <div class="yacht-card reveal stagger-1" data-cursor-text="Charter">
+            <div class="yacht-image">
+              <img src="../assets/images/yacht-deck.jpg" alt="Azure Dream yacht">
+            </div>
+            <div class="yacht-content">
+              <h3>Azure Dream</h3>
+              <p class="yacht-type">Lürssen | 85m</p>
+              <div class="yacht-specs">
+                <div class="spec">
+                  <span class="spec-value">10</span>
+                  <span class="spec-label">Guests</span>
+                </div>
+                <div class="spec">
+                  <span class="spec-value">24</span>
+                  <span class="spec-label">Crew</span>
+                </div>
+                <div class="spec">
+                  <span class="spec-value">5</span>
+                  <span class="spec-label">Cabins</span>
+                </div>
+              </div>
+              <p class="yacht-description">German precision meets Mediterranean elegance. Features a spa, cinema, and dedicated prayer room with qibla indicator.</p>
+              <a href="/contact/" class="btn btn-azure">Request Charter</a>
+            </div>
+          </div>
+          
+          <!-- Yacht 3 -->
+          <div class="yacht-card reveal stagger-2" data-cursor-text="Charter">
+            <div class="yacht-image">
+              <img src="../assets/images/cruise-mediterranean.jpg" alt="Golden Horizon yacht">
+            </div>
+            <div class="yacht-content">
+              <h3>Golden Horizon</h3>
+              <p class="yacht-type">Benetti | 70m</p>
+              <div class="yacht-specs">
+                <div class="spec">
+                  <span class="spec-value">8</span>
+                  <span class="spec-label">Guests</span>
+                </div>
+                <div class="spec">
+                  <span class="spec-value">18</span>
+                  <span class="spec-label">Crew</span>
+                </div>
+                <div class="spec">
+                  <span class="spec-value">4</span>
+                  <span class="spec-label">Cabins</span>
+                </div>
+              </div>
+              <p class="yacht-description">Italian craftsmanship at its finest. Perfect for intimate family gatherings with private beach access platform.</p>
+              <a href="/contact/" class="btn btn-azure">Request Charter</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Itineraries -->
+    <section class="section py-24 bg-deep-teal" id="itineraries">
+      <div class="container">
+        <div class="text-center mb-16">
+          <p class="section-subheading reveal" style="color: var(--azure-crystal);">Curated Journeys</p>
+          <h2 class="reveal stagger-1">Signature Itineraries</h2>
+        </div>
+        
+        <div class="itinerary-tabs">
+          <div class="tab-buttons reveal">
+            <button class="tab-btn active" data-tab="mediterranean">Mediterranean</button>
+            <button class="tab-btn" data-tab="caribbean">Caribbean</button>
+            <button class="tab-btn" data-tab="bespoke">Bespoke</button>
+          </div>
+          
+          <!-- Mediterranean Tab -->
+          <div class="tab-content active" id="mediterranean">
+            <div class="itinerary-card reveal">
+              <div class="itinerary-image">
+                <img src="../assets/images/cruise-mediterranean.jpg" alt="Mediterranean cruise">
+              </div>
+              <div class="itinerary-details">
+                <span class="badge badge-azure mb-4">7 Days</span>
+                <h3>The Mediterranean Odyssey</h3>
+                <p class="itinerary-route">Monaco → Cannes → Portofino → Capri → Amalfi → Dubrovnik → Split</p>
+                <p class="itinerary-description">Sail the azure waters of the Mediterranean, from the glamour of the French Riviera to the ancient walls of Dubrovnik. Each stop offers exclusive shore excursions, private beach access, and halal-certified dining options.</p>
+                
+                <div class="itinerary-highlights">
+                  <h4>Highlights</h4>
+                  <ul>
+                    <li>Private tour of Monaco's Prince's Palace</li>
+                    <li>Exclusive beach club in Capri</li>
+                    <li>Historical walking tour of Dubrovnik</li>
+                    <li>Onboard chef specializing in halal Mediterranean cuisine</li>
+                  </ul>
+                </div>
+                
+                <a href="/contact/" class="btn btn-azure">Inquire Now</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Caribbean Tab -->
+          <div class="tab-content" id="caribbean">
+            <div class="itinerary-card">
+              <div class="itinerary-image">
+                <img src="../assets/images/private-island.jpg" alt="Caribbean cruise">
+              </div>
+              <div class="itinerary-details">
+                <span class="badge badge-azure mb-4">10 Days</span>
+                <h3>The Caribbean Paradise</h3>
+                <p class="itinerary-route">Miami → Nassau → Exuma → Turks & Caicos → St. Barts → Antigua → Barbados</p>
+                <p class="itinerary-description">Discover the turquoise waters and pristine beaches of the Caribbean. From swimming with pigs in Exuma to the exclusive shores of St. Barts, this journey defines tropical luxury.</p>
+                
+                <div class="itinerary-highlights">
+                  <h4>Highlights</h4>
+                  <ul>
+                    <li>Private island experience in Exuma</li>
+                    <li>Snorkeling at the world's third-largest barrier reef</li>
+                    <li>Exclusive shopping in St. Barts</li>
+                    <li>Sunset dinner on a secluded beach</li>
+                  </ul>
+                </div>
+                
+                <a href="/contact/" class="btn btn-azure">Inquire Now</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Bespoke Tab -->
+          <div class="tab-content" id="bespoke">
+            <div class="itinerary-card">
+              <div class="itinerary-image">
+                <img src="../assets/images/destination-turkey.jpg" alt="Bespoke cruise">
+              </div>
+              <div class="itinerary-details">
+                <span class="badge badge-vvip mb-4">Custom Duration</span>
+                <h3>Your Vision, Our Expertise</h3>
+                <p class="itinerary-route">Anywhere your heart desires</p>
+                <p class="itinerary-description">Chart your own course. From the fjords of Norway to the islands of Southeast Asia, we craft bespoke itineraries tailored to your dreams. Our team handles every detail, from port permissions to shore excursions.</p>
+                
+                <div class="itinerary-highlights">
+                  <h4>Possibilities</h4>
+                  <ul>
+                    <li>Arctic expedition with Northern Lights viewing</li>
+                    <li>Southeast Asia island-hopping adventure</li>
+                    <li>Transatlantic crossing with curated stops</li>
+                    <li>Red Sea exploration with historical sites</li>
+                  </ul>
+                </div>
+                
+                <a href="/bespoke/" class="btn btn-azure">Design Your Journey</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Amenities -->
+    <section class="section py-24 bg-midnight" id="amenities">
+      <div class="container">
+        <div class="grid grid-cols-2 gap-16 items-center">
+          <div class="reveal">
+            <p class="section-subheading" style="color: var(--azure-crystal);">Onboard Experience</p>
+            <h2>Every Detail, Perfected</h2>
+            <p class="mt-6">Our yachts are floating five-star resorts, designed to exceed the expectations of the most discerning travelers. From halal-certified gourmet kitchens to dedicated prayer facilities, every detail is crafted with your needs in mind.</p>
+            
+            <div class="amenities-list mt-10">
+              <div class="amenity-item">
+                <div class="amenity-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4>Halal-Certified Kitchen</h4>
+                  <p>Full halal menu with onboard chef</p>
+                </div>
+              </div>
+              
+              <div class="amenity-item">
+                <div class="amenity-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 6v6l4 2"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4>Prayer Facilities</h4>
+                  <p>Dedicated prayer room with qibla</p>
+                </div>
+              </div>
+              
+              <div class="amenity-item">
+                <div class="amenity-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 3v18M19 3v18M5 12h14"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4>Private Cabins</h4>
+                  <p>Ensuite bathrooms, ocean views</p>
+                </div>
+              </div>
+              
+              <div class="amenity-item">
+                <div class="amenity-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2v20M2 12h20"/>
+                  </svg>
+                </div>
+                <div>
+                  <h4>Water Sports</h4>
+                  <p>Jetskis, paddleboards, diving gear</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="amenities-image reveal-right">
+            <img src="../assets/images/yacht-deck.jpg" alt="Yacht amenities">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section py-24 bg-deep-teal" id="cta">
+      <div class="container">
+        <div class="cta-box reveal">
+          <div class="cta-content">
+            <h2>Ready to Set Sail?</h2>
+            <p>Speak with our charter specialists to plan your perfect voyage.</p>
+            <div class="cta-buttons">
+              <a href="https://wa.me/16472497545" class="btn btn-azure btn-magnetic" target="_blank">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                WhatsApp Us
+              </a>
+              <a href="/contact/" class="btn btn-outline btn-magnetic">Book Consultation</a>
+            </div>
+          </div>
+          <div class="cta-image">
+            <img src="../assets/images/hero-yacht.jpg" alt="Luxury yacht">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">Baarik</div>
+          <p class="footer-tagline">Ultra-luxury travel for the discerning few. TICO-registered, IATA-certified, proudly Canadian.</p>
+          <div class="tico-badge">
+            <svg viewBox="0 0 48 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="2" width="44" height="28" rx="4" stroke="#F1C40F" stroke-width="2"/>
+              <text x="24" y="21" text-anchor="middle" fill="#F1C40F" font-size="14" font-weight="bold">TICO</text>
+            </svg>
+            <span>Reg. #<strong>50021765</strong></span>
+          </div>
+        </div>
+        
+        <div class="footer-column">
+          <h4 class="footer-heading">Experiences</h4>
+          <ul class="footer-links">
+            <li><a href="/cruises/">Luxury Cruises</a></li>
+            <li><a href="/weddings/">Destination Weddings</a></li>
+            <li><a href="/packages/leisure.html">Leisure Packages</a></li>
+            <li><a href="/packages/corporate.html">Corporate Retreats</a></li>
+            <li><a href="/bespoke/">Bespoke Travel</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4 class="footer-heading">Company</h4>
+          <ul class="footer-links">
+            <li><a href="/about/">About Us</a></li>
+            <li><a href="/journal/">Journal</a></li>
+            <li><a href="/contact/">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4 class="footer-heading">Connect</h4>
+          <ul class="footer-links">
+            <li><a href="https://wa.me/16472497545" target="_blank">WhatsApp</a></li>
+            <li><a href="mailto:info@baariktravel.ca">Email Us</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="footer-legal">
+          © 2026 Baarik Travel & Tours Inc. All rights reserved. TICO Registration #50021765.
+        </p>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/16472497545" class="whatsapp-float" target="_blank">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <script src="../assets/js/main.js"></script>
+  
+  <style>
+    /* Yacht Grid */
+    .yacht-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-6);
+    }
+    
+    .yacht-card {
+      background: rgba(253, 255, 252, 0.03);
+      border: 1px solid rgba(253, 255, 252, 0.08);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: all 0.5s var(--ease-out-expo);
+    }
+    
+    .yacht-card:hover {
+      transform: translateY(-8px);
+      border-color: rgba(0, 210, 255, 0.3);
+    }
+    
+    .yacht-image {
+      position: relative;
+      aspect-ratio: 16/10;
+      overflow: hidden;
+    }
+    
+    .yacht-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.8s var(--ease-out-expo);
+    }
+    
+    .yacht-card:hover .yacht-image img {
+      transform: scale(1.05);
+    }
+    
+    .yacht-badge {
+      position: absolute;
+      top: var(--space-4);
+      left: var(--space-4);
+    }
+    
+    .yacht-content {
+      padding: var(--space-6);
+    }
+    
+    .yacht-content h3 {
+      font-size: var(--text-2xl);
+      margin-bottom: var(--space-1);
+    }
+    
+    .yacht-type {
+      font-size: var(--text-sm);
+      color: var(--azure-crystal);
+      margin-bottom: var(--space-4);
+    }
+    
+    .yacht-specs {
+      display: flex;
+      gap: var(--space-6);
+      margin-bottom: var(--space-4);
+      padding-bottom: var(--space-4);
+      border-bottom: 1px solid rgba(253, 255, 252, 0.08);
+    }
+    
+    .spec {
+      text-align: center;
+    }
+    
+    .spec-value {
+      display: block;
+      font-family: var(--font-heading);
+      font-size: var(--text-xl);
+      font-style: italic;
+      color: var(--champagne-white);
+      line-height: 1;
+    }
+    
+    .spec-label {
+      font-size: var(--text-xs);
+      color: rgba(253, 255, 252, 0.5);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+    
+    .yacht-description {
+      font-size: var(--text-sm);
+      color: rgba(253, 255, 252, 0.7);
+      margin-bottom: var(--space-5);
+    }
+    
+    /* Itinerary Tabs */
+    .itinerary-tabs {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    
+    .tab-buttons {
+      display: flex;
+      justify-content: center;
+      gap: var(--space-4);
+      margin-bottom: var(--space-8);
+    }
+    
+    .tab-btn {
+      padding: var(--space-3) var(--space-8);
+      background: rgba(253, 255, 252, 0.05);
+      border: 1px solid rgba(253, 255, 252, 0.1);
+      border-radius: 100px;
+      color: var(--champagne-white);
+      font-family: var(--font-body);
+      font-size: var(--text-sm);
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all 0.3s var(--ease-out-expo);
+    }
+    
+    .tab-btn:hover {
+      background: rgba(253, 255, 252, 0.1);
+    }
+    
+    .tab-btn.active {
+      background: var(--azure-crystal);
+      border-color: var(--azure-crystal);
+      color: var(--midnight-ocean);
+    }
+    
+    .tab-content {
+      display: none;
+    }
+    
+    .tab-content.active {
+      display: block;
+    }
+    
+    .itinerary-card {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      background: rgba(253, 255, 252, 0.03);
+      border: 1px solid rgba(253, 255, 252, 0.08);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    
+    .itinerary-image {
+      min-height: 400px;
+    }
+    
+    .itinerary-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .itinerary-details {
+      padding: var(--space-8);
+    }
+    
+    .itinerary-route {
+      font-family: var(--font-heading);
+      font-style: italic;
+      font-size: var(--text-lg);
+      color: var(--azure-crystal);
+      margin-bottom: var(--space-4);
+    }
+    
+    .itinerary-description {
+      color: rgba(253, 255, 252, 0.7);
+      margin-bottom: var(--space-6);
+    }
+    
+    .itinerary-highlights {
+      margin-bottom: var(--space-6);
+    }
+    
+    .itinerary-highlights h4 {
+      font-family: var(--font-body);
+      font-size: var(--text-sm);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: var(--space-3);
+    }
+    
+    .itinerary-highlights ul {
+      list-style: none;
+    }
+    
+    .itinerary-highlights li {
+      position: relative;
+      padding-left: var(--space-5);
+      margin-bottom: var(--space-2);
+      font-size: var(--text-sm);
+      color: rgba(253, 255, 252, 0.7);
+    }
+    
+    .itinerary-highlights li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: var(--azure-crystal);
+    }
+    
+    /* Amenities */
+    .amenities-list {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-5);
+    }
+    
+    .amenity-item {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-4);
+    }
+    
+    .amenity-icon {
+      width: 48px;
+      height: 48px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0, 210, 255, 0.1);
+      border-radius: 8px;
+      color: var(--azure-crystal);
+      flex-shrink: 0;
+    }
+    
+    .amenity-icon svg {
+      width: 24px;
+      height: 24px;
+    }
+    
+    .amenity-item h4 {
+      font-family: var(--font-body);
+      font-size: var(--text-base);
+      font-weight: 600;
+      margin-bottom: var(--space-1);
+    }
+    
+    .amenity-item p {
+      font-size: var(--text-sm);
+      color: rgba(253, 255, 252, 0.6);
+      margin: 0;
+    }
+    
+    .amenities-image {
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    
+    .amenities-image img {
+      width: 100%;
+      height: auto;
+    }
+    
+    /* CTA Box */
+    .cta-box {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      background: rgba(253, 255, 252, 0.03);
+      border: 1px solid rgba(253, 255, 252, 0.08);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    
+    .cta-content {
+      padding: var(--space-12);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+    .cta-content h2 {
+      margin-bottom: var(--space-5);
+    }
+    
+    .cta-content p {
+      font-size: var(--text-lg);
+      color: rgba(253, 255, 252, 0.7);
+      margin-bottom: var(--space-8);
+    }
+    
+    .cta-buttons {
+      display: flex;
+      gap: var(--space-4);
+    }
+    
+    .cta-image {
+      position: relative;
+      min-height: 400px;
+    }
+    
+    .cta-image img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    /* WhatsApp Float */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 60px;
+      height: 60px;
+      background: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+      z-index: 999;
+      transition: all 0.3s var(--ease-out-expo);
+    }
+    
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+    }
+    
+    .whatsapp-float svg {
+      width: 28px;
+      height: 28px;
+    }
+    
+    /* Responsive */
+    @media (max-width: 1200px) {
+      .yacht-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    
+    @media (max-width: 992px) {
+      .itinerary-card {
+        grid-template-columns: 1fr;
+      }
+      
+      .itinerary-image {
+        min-height: 250px;
+      }
+      
+      .cta-box {
+        grid-template-columns: 1fr;
+      }
+      
+      .cta-image {
+        min-height: 250px;
+        order: -1;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .yacht-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .tab-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .tab-btn {
+        width: 100%;
+        max-width: 300px;
+      }
+      
+      .yacht-specs {
+        justify-content: space-around;
+      }
+      
+      .cta-buttons {
+        flex-direction: column;
+      }
+    }
+  </style>
+  
+  <script>
+    // Tab functionality
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const tabId = btn.dataset.tab;
+        
+        // Remove active from all
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+        
+        // Add active to clicked
+        btn.classList.add('active');
+        document.getElementById(tabId).classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>

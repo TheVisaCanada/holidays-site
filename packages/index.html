@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Luxury travel packages by Baarik. Curated leisure tours, corporate retreats, and bespoke experiences. TICO-registered travel agency.">
+  <title>Travel Packages | Luxury Tours & Retreats | Holidays by Baarik</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+  <div class="loading-screen">
+    <div class="loading-logo">Baarik</div>
+    <div class="loading-bar"><div class="loading-bar-inner"></div></div>
+  </div>
+  <div class="scroll-progress"></div>
+  <div class="custom-cursor"></div>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">Baarik</a>
+      <div class="nav-links">
+        <div class="nav-dropdown">
+          <a href="#" class="nav-link">The Experience</a>
+          <div class="dropdown-menu">
+            <a href="/cruises/">Cruises</a>
+            <a href="/weddings/">Weddings</a>
+            <a href="/packages/">Packages</a>
+            <a href="/bespoke/">Bespoke</a>
+          </div>
+        </div>
+        <a href="/journal/" class="nav-link">Journal</a>
+        <a href="/about/" class="nav-link">About</a>
+        <a href="/contact/" class="nav-link">Contact</a>
+      </div>
+      <div class="nav-cta">
+        <a href="tel:+16472497545" class="nav-link hidden-mobile">+1 (647) 249-7545</a>
+        <a href="/contact/" class="btn btn-primary btn-magnetic">Reserve Consultation</a>
+      </div>
+      <button class="mobile-menu-btn" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu">
+    <a href="/cruises/" class="mobile-menu-link">Cruises</a>
+    <a href="/weddings/" class="mobile-menu-link">Weddings</a>
+    <a href="/packages/" class="mobile-menu-link">Packages</a>
+    <a href="/bespoke/" class="mobile-menu-link">Bespoke</a>
+    <a href="/journal/" class="mobile-menu-link">Journal</a>
+    <a href="/about/" class="mobile-menu-link">About</a>
+    <a href="/contact/" class="mobile-menu-link">Contact</a>
+  </div>
+
+  <main>
+    <section class="section section-hero" id="hero">
+      <div class="hero-bg">
+        <img src="../assets/images/destination-dubai.jpg" alt="Luxury destination" class="image-bg parallax-bg">
+        <div class="video-overlay"></div>
+      </div>
+      <div class="hero-content">
+        <p class="section-subheading reveal">Curated Experiences</p>
+        <h1 class="hero-title reveal stagger-1">Journeys<br>Designed for You</h1>
+        <p class="hero-subtitle reveal stagger-2">From leisure escapes to corporate retreats, every package is crafted with precision and care.</p>
+        <div class="hero-cta-group reveal stagger-3">
+          <a href="leisure.html" class="btn btn-primary btn-magnetic">Leisure Tours</a>
+          <a href="corporate.html" class="btn btn-outline btn-magnetic">Corporate Retreats</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section py-24 bg-midnight" id="packages">
+      <div class="container">
+        <div class="text-center mb-16">
+          <p class="section-subheading reveal">Our Collections</p>
+          <h2 class="reveal stagger-1">Choose Your Experience</h2>
+        </div>
+        
+        <div class="package-categories">
+          <a href="leisure.html" class="package-category reveal">
+            <div class="category-image">
+              <img src="../assets/images/hero-maldives.jpg" alt="Leisure travel">
+            </div>
+            <div class="category-content">
+              <span class="badge badge-gold">Leisure</span>
+              <h3>Curated Tours</h3>
+              <p>Maldives, Dubai, Turkey, Switzerland, and beyond. Discover the world's most exclusive destinations.</p>
+              <span class="category-cta">Explore <span>→</span></span>
+            </div>
+          </a>
+          
+          <a href="corporate.html" class="package-category reveal stagger-1">
+            <div class="category-image">
+              <img src="../assets/images/corporate-retreat.jpg" alt="Corporate retreat">
+            </div>
+            <div class="category-content">
+              <span class="badge badge-azure">Corporate</span>
+              <h3>Executive Retreats</h3>
+              <p>VVIP incentive travel, strategy sessions, and team building. Privacy-focused and halal-compliant.</p>
+              <span class="category-cta">Explore <span>→</span></span>
+            </div>
+          </a>
+          
+          <a href="/bespoke/" class="package-category reveal stagger-2">
+            <div class="category-image">
+              <img src="../assets/images/private-island.jpg" alt="Bespoke travel">
+            </div>
+            <div class="category-content">
+              <span class="badge badge-vvip">Bespoke</span>
+              <h3>Price on Request</h3>
+              <p>Private island buyouts, celebrity coordination, and experiences beyond imagination.</p>
+              <span class="category-cta">Inquire <span>→</span></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section py-24 bg-deep-teal" id="featured">
+      <div class="container">
+        <div class="text-center mb-16">
+          <p class="section-subheading reveal">Featured</p>
+          <h2 class="reveal stagger-1">This Season's Selections</h2>
+        </div>
+        
+        <div class="featured-packages">
+          <div class="featured-package large reveal">
+            <img src="../assets/images/hero-maldives.jpg" alt="Maldives package">
+            <div class="package-overlay">
+              <span class="badge badge-gold">Most Popular</span>
+              <h3>Maldives Overwater Escape</h3>
+              <p>7 nights in a private overwater villa</p>
+              <a href="/contact/" class="btn btn-primary">Inquire Now</a>
+            </div>
+          </div>
+          
+          <div class="featured-package reveal stagger-1">
+            <img src="../assets/images/destination-dubai.jpg" alt="Dubai package">
+            <div class="package-overlay">
+              <h3>Dubai Luxury Week</h3>
+              <p>5 nights in Burj Khalifa district</p>
+              <a href="/contact/" class="btn btn-primary">Inquire</a>
+            </div>
+          </div>
+          
+          <div class="featured-package reveal stagger-2">
+            <img src="../assets/images/destination-switzerland.jpg" alt="Switzerland package">
+            <div class="package-overlay">
+              <h3>Swiss Alpine Retreat</h3>
+              <p>Winter wonderland experience</p>
+              <a href="/contact/" class="btn btn-primary">Inquire</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">Baarik</div>
+          <p class="footer-tagline">Ultra-luxury travel for the discerning few.</p>
+          <div class="tico-badge">
+            <svg viewBox="0 0 48 32" fill="none"><rect x="2" y="2" width="44" height="28" rx="4" stroke="#F1C40F" stroke-width="2"/><text x="24" y="21" text-anchor="middle" fill="#F1C40F" font-size="14" font-weight="bold">TICO</text></svg>
+            <span>Reg. #<strong>50021765</strong></span>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4 class="footer-heading">Experiences</h4>
+          <ul class="footer-links">
+            <li><a href="/cruises/">Luxury Cruises</a></li>
+            <li><a href="/weddings/">Destination Weddings</a></li>
+            <li><a href="/packages/">Packages</a></li>
+            <li><a href="/bespoke/">Bespoke</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4 class="footer-heading">Company</h4>
+          <ul class="footer-links">
+            <li><a href="/about/">About Us</a></li>
+            <li><a href="/journal/">Journal</a></li>
+            <li><a href="/contact/">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4 class="footer-heading">Connect</h4>
+          <ul class="footer-links">
+            <li><a href="https://wa.me/16472497545" target="_blank">WhatsApp</a></li>
+            <li><a href="mailto:info@baariktravel.ca">Email</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-legal">© 2026 Baarik Travel & Tours Inc. TICO Registration #50021765.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/16472497545" class="whatsapp-float" target="_blank">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="../assets/js/main.js"></script>
+  <style>
+    .package-categories { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-6); }
+    .package-category { background: rgba(253, 255, 252, 0.03); border: 1px solid rgba(253, 255, 252, 0.08); border-radius: 12px; overflow: hidden; transition: all 0.5s var(--ease-out-expo); }
+    .package-category:hover { transform: translateY(-8px); border-color: rgba(241, 196, 15, 0.3); }
+    .category-image { aspect-ratio: 16/10; overflow: hidden; }
+    .category-image img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.8s var(--ease-out-expo); }
+    .package-category:hover .category-image img { transform: scale(1.05); }
+    .category-content { padding: var(--space-6); }
+    .category-content h3 { font-size: var(--text-xl); margin: var(--space-3) 0; }
+    .category-content p { font-size: var(--text-sm); color: rgba(253, 255, 252, 0.7); margin-bottom: var(--space-4); }
+    .category-cta { display: inline-flex; align-items: center; gap: var(--space-2); font-size: var(--text-sm); font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--sunset-gold); }
+    .package-category:hover .category-cta { gap: var(--space-4); }
+    .featured-packages { display: grid; grid-template-columns: 1.5fr 1fr; grid-template-rows: repeat(2, 250px); gap: var(--space-5); }
+    .featured-package { position: relative; border-radius: 12px; overflow: hidden; }
+    .featured-package.large { grid-row: span 2; }
+    .featured-package img { width: 100%; height: 100%; object-fit: cover; }
+    .package-overlay { position: absolute; bottom: 0; left: 0; right: 0; padding: var(--space-6); background: linear-gradient(to top, rgba(1, 22, 39, 0.95), transparent); }
+    .package-overlay h3 { font-size: var(--text-xl); margin: var(--space-2) 0; }
+    .package-overlay p { font-size: var(--text-sm); color: rgba(253, 255, 252, 0.7); margin-bottom: var(--space-4); }
+    .whatsapp-float { position: fixed; bottom: 30px; right: 30px; width: 60px; height: 60px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4); z-index: 999; }
+    .whatsapp-float svg { width: 28px; height: 28px; }
+    @media (max-width: 992px) { .package-categories { grid-template-columns: 1fr; } .featured-packages { grid-template-columns: 1fr; grid-template-rows: repeat(3, 300px); } .featured-package.large { grid-row: span 1; } }
+  </style>
+</body>
+</html>
