@@ -12,6 +12,24 @@
   <link rel="stylesheet" href="../assets/css/main.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Leisure Holiday Packages — Holidays by Baarik",
+    "description": "Leisure holiday packages to the Maldives, Dubai, Turkey, Switzerland, and Morocco for Canadian families.",
+    "provider": {"@type": "TravelAgency", "name": "Holidays by Baarik", "telephone": "+1-647-249-7545", "url": "https://holidays.baariktravel.ca"},
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Maldives Overwater Villa Package", "description": "7-night overwater villa stay with halal-certified dining. From $4,200 per person."},
+      {"@type": "ListItem", "position": 2, "name": "Dubai Luxury City Package", "description": "5-night luxury Dubai stay with private desert safari. From $2,800 per person."},
+      {"@type": "ListItem", "position": 3, "name": "Turkey Cultural Tour", "description": "10-day Turkey tour including Istanbul and Cappadocia. From $2,400 per person."},
+      {"@type": "ListItem", "position": 4, "name": "Switzerland Alpine Package", "description": "7-night Swiss alpine chalet with private ski instruction. From $3,600 per person."},
+      {"@type": "ListItem", "position": 5, "name": "Morocco Explorer Package", "description": "8-day Morocco tour including Marrakech, the Sahara, and the Atlas Mountains. From $2,200 per person."}
+    ]
+  }
+  </script>
 </head>
 <body>
   <div class="loading-screen">
@@ -65,7 +83,7 @@
       <div class="hero-content">
         <p class="section-subheading reveal">Curated Tours</p>
         <h1 class="hero-title reveal stagger-1">The Perfect<br>Escape</h1>
-        <p class="hero-subtitle reveal stagger-2">Handcrafted journeys to the world's most exclusive destinations. Every detail, perfected.</p>
+        <p class="hero-subtitle reveal stagger-2">Carefully planned journeys to destinations worth visiting. Every detail handled before you arrive.</p>
       </div>
     </section>
 
@@ -91,10 +109,12 @@
                 <li>Halal-certified dining</li>
                 <li>Underwater restaurant experience</li>
               </ul>
+              <p class="price-from" style="color: var(--sunset-gold); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">From $4,200 per person*</p>
+              <p class="price-note" style="font-size: 0.8rem; color: rgba(253,255,252,0.5); margin-bottom: 1.5rem;">*Based on double occupancy. Contact us for a custom quote.</p>
               <a href="/contact/" class="btn btn-primary">Inquire Now</a>
             </div>
           </div>
-          
+
           <div class="dest-package reverse reveal stagger-1">
             <div class="dest-content">
               <span class="badge badge-azure">Urban Luxury</span>
@@ -106,6 +126,8 @@
                 <li>Burj Khalifa VIP access</li>
                 <li>Luxury shopping experience</li>
               </ul>
+              <p class="price-from" style="color: var(--sunset-gold); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">From $2,800 per person*</p>
+              <p class="price-note" style="font-size: 0.8rem; color: rgba(253,255,252,0.5); margin-bottom: 1.5rem;">*Based on double occupancy. Contact us for a custom quote.</p>
               <a href="/contact/" class="btn btn-primary">Inquire Now</a>
             </div>
             <div class="dest-image">
@@ -127,25 +149,49 @@
                 <li>Historical site visits</li>
                 <li>Traditional hammam spa</li>
               </ul>
+              <p class="price-from" style="color: var(--sunset-gold); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">From $2,400 per person*</p>
+              <p class="price-note" style="font-size: 0.8rem; color: rgba(253,255,252,0.5); margin-bottom: 1.5rem;">*Based on double occupancy. Contact us for a custom quote.</p>
               <a href="/contact/" class="btn btn-primary">Inquire Now</a>
             </div>
           </div>
-          
+
           <div class="dest-package reverse reveal stagger-1">
             <div class="dest-content">
               <span class="badge badge-azure">Winter</span>
               <h3>Switzerland</h3>
-              <p>Alpine elegance at its finest. Snow-capped peaks, luxury chalets, and unforgettable winter experiences.</p>
+              <p>Alpine elegance at its finest. Snow-capped peaks, luxury chalets, and memorable winter experiences.</p>
               <ul class="dest-features">
                 <li>7-night alpine chalet</li>
                 <li>Private ski instruction</li>
                 <li>Scenic train journeys</li>
                 <li>Mountain dining experiences</li>
               </ul>
+              <p class="price-from" style="color: var(--sunset-gold); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">From $3,600 per person*</p>
+              <p class="price-note" style="font-size: 0.8rem; color: rgba(253,255,252,0.5); margin-bottom: 1.5rem;">*Based on double occupancy. Contact us for a custom quote.</p>
               <a href="/contact/" class="btn btn-primary">Inquire Now</a>
             </div>
             <div class="dest-image">
               <img src="../assets/images/destination-switzerland.jpg" alt="Switzerland">
+            </div>
+          </div>
+
+          <div class="dest-package reveal">
+            <div class="dest-image">
+              <img src="../assets/images/destination-turkey.jpg" alt="Morocco">
+            </div>
+            <div class="dest-content">
+              <span class="badge badge-gold">New</span>
+              <h3>Morocco</h3>
+              <p>Ancient medinas, sweeping desert, and the Atlas Mountains. Morocco delivers colour, culture, and calm in equal measure.</p>
+              <ul class="dest-features">
+                <li>8-day guided tour</li>
+                <li>Marrakech riad stay</li>
+                <li>Sahara Desert overnight camp</li>
+                <li>Halal dining throughout</li>
+              </ul>
+              <p class="price-from" style="color: var(--sunset-gold); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem;">From $2,200 per person*</p>
+              <p class="price-note" style="font-size: 0.8rem; color: rgba(253,255,252,0.5); margin-bottom: 1.5rem;">*Based on double occupancy. Contact us for a custom quote.</p>
+              <a href="/contact/" class="btn btn-primary">Inquire Now</a>
             </div>
           </div>
         </div>
@@ -158,10 +204,10 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="footer-logo">Baarik</div>
-          <p class="footer-tagline">Ultra-luxury travel for the discerning few.</p>
+          <p class="footer-tagline">Premium travel for families who value quality.</p>
           <div class="tico-badge">
             <svg viewBox="0 0 48 32" fill="none"><rect x="2" y="2" width="44" height="28" rx="4" stroke="#F1C40F" stroke-width="2"/><text x="24" y="21" text-anchor="middle" fill="#F1C40F" font-size="14" font-weight="bold">TICO</text></svg>
-            <span>Reg. #<strong>50021765</strong></span>
+            <span>Registration Pending</span>
           </div>
         </div>
         <div class="footer-column">
@@ -190,7 +236,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p class="footer-legal">© 2026 Baarik Travel & Tours Inc. TICO Registration #50021765.</p>
+        <p class="footer-legal">© 2026 Baarik Travel & Tours Inc. TICO Registration Pending. <a href="/privacy.html">Privacy Policy</a> | <a href="/terms.html">Terms of Service</a></p>
       </div>
     </div>
   </footer>

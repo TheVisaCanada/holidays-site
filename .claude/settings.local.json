@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.tripcentral.ca)",
+      "mcp__firecrawl__firecrawl_scrape",
+      "Bash(find C:Projectsholidays-siteholidays-baarik -type f -name *)",
+      "Bash(find C:Projectsholidays-siteholidays-baarik -type f ! -path */.git/* ! -path */.claude/*)"
+    ]
+  }
+}

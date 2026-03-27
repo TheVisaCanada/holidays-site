@@ -12,6 +12,22 @@
   <link rel="stylesheet" href="../assets/css/main.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "The Journal — Holidays by Baarik",
+    "description": "Travel inspiration, destination guides, wedding planning tips, and halal travel insights from Holidays by Baarik.",
+    "url": "https://holidays.baariktravel.ca/journal/",
+    "publisher": {
+      "@type": "TravelAgency",
+      "name": "Holidays by Baarik",
+      "url": "https://holidays.baariktravel.ca"
+    }
+  }
+  </script>
 </head>
 <body>
   <div class="loading-screen">
@@ -80,7 +96,7 @@
         </div>
         
         <div class="articles-grid">
-          <article class="article-card featured reveal" data-category="destinations">
+          <a href="/journal/dubai-halal-luxury-guide.html" class="article-card featured reveal" data-category="destinations">
             <img src="../assets/images/destination-dubai.jpg" alt="Dubai guide">
             <div class="article-content">
               <span class="article-category">Destinations</span>
@@ -88,52 +104,52 @@
               <p>Discover the finest prayer facilities, certified dining, and private experiences in the City of Gold. From the Burj Al Arab to the desert dunes, we cover everything you need to know.</p>
               <span class="article-date">March 15, 2026</span>
             </div>
-          </article>
-          
-          <article class="article-card reveal stagger-1" data-category="weddings">
+          </a>
+
+          <a href="/journal/destination-wedding-timeline.html" class="article-card reveal stagger-1" data-category="weddings">
             <img src="../assets/images/wedding-beach.jpg" alt="Wedding planning">
             <div class="article-content">
               <span class="article-category">Weddings</span>
               <h3>Planning a Destination Wedding: The 12-Month Timeline</h3>
               <span class="article-date">February 28, 2026</span>
             </div>
-          </article>
-          
-          <article class="article-card reveal stagger-2" data-category="destinations">
+          </a>
+
+          <a href="/journal/mediterranean-yacht-itinerary.html" class="article-card reveal stagger-2" data-category="destinations">
             <img src="../assets/images/cruise-mediterranean.jpg" alt="Mediterranean">
             <div class="article-content">
               <span class="article-category">Destinations</span>
               <h3>Mediterranean by Mega Yacht: The Ultimate Itinerary</h3>
               <span class="article-date">February 10, 2026</span>
             </div>
-          </article>
-          
-          <article class="article-card reveal" data-category="guides">
+          </a>
+
+          <a href="/journal/maldives-halal-resorts.html" class="article-card reveal" data-category="guides">
             <img src="../assets/images/hero-maldives.jpg" alt="Maldives guide">
             <div class="article-content">
               <span class="article-category">Halal Guides</span>
               <h3>6 Best Halal-Friendly Resorts in the Maldives</h3>
               <span class="article-date">January 25, 2026</span>
             </div>
-          </article>
-          
-          <article class="article-card reveal stagger-1" data-category="lifestyle">
+          </a>
+
+          <a href="/journal/travel-done-right.html" class="article-card reveal stagger-1" data-category="lifestyle">
             <img src="../assets/images/yacht-deck.jpg" alt="Yacht lifestyle">
             <div class="article-content">
               <span class="article-category">Lifestyle</span>
-              <h3>The Art of Luxury Travel: Lessons from 15 Years</h3>
+              <h3>Travel Done Right</h3>
               <span class="article-date">January 12, 2026</span>
             </div>
-          </article>
-          
-          <article class="article-card reveal stagger-2" data-category="weddings">
+          </a>
+
+          <a href="/journal/moroccan-palace-weddings.html" class="article-card reveal stagger-2" data-category="weddings">
             <img src="../assets/images/wedding-palace.jpg" alt="Palace wedding">
             <div class="article-content">
               <span class="article-category">Weddings</span>
               <h3>Why Moroccan Palaces Make Perfect Wedding Venues</h3>
               <span class="article-date">December 28, 2025</span>
             </div>
-          </article>
+          </a>
         </div>
       </div>
     </section>
@@ -144,10 +160,10 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="footer-logo">Baarik</div>
-          <p class="footer-tagline">Ultra-luxury travel for the discerning few.</p>
+          <p class="footer-tagline">Premium travel for families who value quality.</p>
           <div class="tico-badge">
             <svg viewBox="0 0 48 32" fill="none"><rect x="2" y="2" width="44" height="28" rx="4" stroke="#F1C40F" stroke-width="2"/><text x="24" y="21" text-anchor="middle" fill="#F1C40F" font-size="14" font-weight="bold">TICO</text></svg>
-            <span>Reg. #<strong>50021765</strong></span>
+            <span>Registration Pending</span>
           </div>
         </div>
         <div class="footer-column">
@@ -176,7 +192,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p class="footer-legal">© 2026 Baarik Travel & Tours Inc. TICO Registration #50021765.</p>
+        <p class="footer-legal">© 2026 Baarik Travel & Tours Inc. TICO Registration Pending. <a href="/privacy.html">Privacy Policy</a> | <a href="/terms.html">Terms of Service</a></p>
       </div>
     </div>
   </footer>

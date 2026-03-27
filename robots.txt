@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://holidays.baariktravel.ca/sitemap.xml
