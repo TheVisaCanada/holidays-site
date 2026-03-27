@@ -374,10 +374,11 @@ a:hover {
   padding: var(--space-4) var(--space-8);
   font-family: var(--font-body);
   font-size: var(--text-sm);
-  font-weight: 500;
-  letter-spacing: 0.1em;
+  font-weight: 600;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
   border: none;
+  border-radius: 0;
   cursor: pointer;
   transition: all var(--transition-base);
   position: relative;
@@ -400,47 +401,47 @@ a:hover {
 }
 
 .btn-primary {
-  background: var(--sunset-gold);
-  color: var(--midnight-ocean);
+  background: #C9A84C;
+  color: #011627;
 }
 
 .btn-primary:hover {
-  background: #FFD700;
+  background: #D4B86A;
   transform: translateY(-2px);
-  box-shadow: 0 10px 30px rgba(241, 196, 15, 0.3);
+  box-shadow: 0 10px 30px rgba(201, 168, 76, 0.35);
 }
 
 .btn-azure {
-  background: var(--azure-crystal);
-  color: var(--midnight-ocean);
+  background: #C9A84C;
+  color: #011627;
 }
 
 .btn-azure:hover {
-  background: #33DDFF;
+  background: #D4B86A;
   transform: translateY(-2px);
-  box-shadow: 0 10px 30px rgba(0, 210, 255, 0.3);
+  box-shadow: 0 10px 30px rgba(201, 168, 76, 0.35);
 }
 
 .btn-outline {
   background: transparent;
-  color: var(--champagne-white);
-  border: 1px solid var(--champagne-white);
+  color: #C9A84C;
+  border: 1px solid #C9A84C;
 }
 
 .btn-outline:hover {
-  background: var(--champagne-white);
-  color: var(--midnight-ocean);
+  background: #C9A84C;
+  color: #011627;
 }
 
 .btn-outline-gold {
   background: transparent;
-  color: var(--sunset-gold);
-  border: 1px solid var(--sunset-gold);
+  color: #C9A84C;
+  border: 1px solid #C9A84C;
 }
 
 .btn-outline-gold:hover {
-  background: var(--sunset-gold);
-  color: var(--midnight-ocean);
+  background: #C9A84C;
+  color: #011627;
 }
 
 /* Magnetic Button Effect */
