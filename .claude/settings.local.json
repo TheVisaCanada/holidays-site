@@ -4,7 +4,9 @@
       "WebFetch(domain:www.tripcentral.ca)",
       "mcp__firecrawl__firecrawl_scrape",
       "Bash(find C:Projectsholidays-siteholidays-baarik -type f -name *)",
-      "Bash(find C:Projectsholidays-siteholidays-baarik -type f ! -path */.git/* ! -path */.claude/*)"
+      "Bash(find C:Projectsholidays-siteholidays-baarik -type f ! -path */.git/* ! -path */.claude/*)",
+      "Bash(sed -i 's|/logo\\\\.png|../barrik-logo-blue.png|g' halal-friendly-vacations.html ramadan-travel.html eid-travel-packages.html terms.html privacy.html bespoke/index.html weddings/index.html cruises/index.html contact/index.html about/index.html)",
+      "Bash(sed -i 's|/logo\\\\.png|../../barrik-logo-blue.png|g' packages/index.html packages/leisure.html packages/corporate.html journal/index.html journal/post-template.html journal/travel-done-right.html journal/dubai-halal-luxury-guide.html journal/destination-wedding-timeline.html journal/mediterranean-yacht-itinerary.html journal/maldives-halal-resorts.html journal/moroccan-palace-weddings.html)"
     ]
   }
 }
