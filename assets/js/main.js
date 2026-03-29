@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initFormValidation();
   initMobileMenu();
   initParallax();
+  initVideoHero();
 });
 
 // ============================================
@@ -29,27 +30,23 @@ document.addEventListener('DOMContentLoaded', () => {
 function initLoadingScreen() {
   const loadingScreen = document.querySelector('.loading-screen');
   const loadingBar = document.querySelector('.loading-bar-inner');
-  
+
   if (!loadingScreen) return;
-  
+
   let progress = 0;
   const interval = setInterval(() => {
     progress += Math.random() * 15;
     if (progress >= 100) {
       progress = 100;
       clearInterval(interval);
-      
       setTimeout(() => {
         loadingScreen.classList.add('hidden');
+        const nav = document.querySelector('.nav'); if (nav) { nav.classList.remove('nav-scrolled'); }
+        setTimeout(() => { loadingScreen.style.display = 'none'; }, 800);
         document.body.classList.add('loaded');
-        
-        // Trigger hero animations after load
-        setTimeout(() => {
-          initHeroAnimations();
-        }, 300);
-      }, 500);
+        setTimeout(() => { initHeroAnimations(); }, 300);
+      }, 200);
     }
-    
     if (loadingBar) {
       loadingBar.style.width = `${progress}%`;
     }
@@ -63,31 +60,22 @@ function initLoadingScreen() {
 function initNavigation() {
   const nav = document.querySelector('.nav');
   if (!nav) return;
-  
-  let lastScroll = 0;
-  const scrollThreshold = 100;
-  
-  window.addEventListener('scroll', () => {
-    const currentScroll = window.pageYOffset;
-    
-    // Add/remove scrolled class
-    if (currentScroll > scrollThreshold) {
+
+  const hero = document.querySelector('.section-hero');
+
+  function updateNav() {
+    const heroBottom = hero ? hero.offsetHeight : window.innerHeight;
+    if (window.scrollY >= heroBottom) {
       nav.classList.add('nav-scrolled');
     } else {
       nav.classList.remove('nav-scrolled');
     }
-    
-    // Hide/show on scroll direction (optional)
-    if (currentScroll > lastScroll && currentScroll > 500) {
-      nav.style.transform = 'translateY(-100%)';
-    } else {
-      nav.style.transform = 'translateY(0)';
-    }
-    
-    lastScroll = currentScroll;
-  }, { passive: true });
-  
-  // Smooth scroll for anchor links
+  }
+
+  window.addEventListener('scroll', updateNav, { passive: true });
+  window.addEventListener('load', updateNav);
+  requestAnimationFrame(() => { setTimeout(updateNav, 100); });
+
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
       e.preventDefault();
@@ -846,7 +834,71 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // ============================================
-// 21. CONSOLE BRANDING
+// 21. VIDEO HERO CROSSFADE
+// ============================================
+
+function initVideoHero() {
+  const vids = Array.from(document.querySelectorAll('.hero-vid'));
+  const dots = Array.from(document.querySelectorAll('.vid-dot'));
+  if (!vids.length) return;
+
+  const slides = [
+    {
+      title: 'The Art of<br>the Escape',
+      subtitle: 'Premium holidays for families and travellers who value quality. Every detail handled — so you can just enjoy the journey.'
+    },
+    {
+      title: 'Where the Shore<br>Meets Stillness',
+      subtitle: 'Sun-drenched coastlines, private villas, and world-class resorts. Your perfect beach escape, curated to the last detail.'
+    },
+    {
+      title: 'Your Day,<br>Perfectly Placed',
+      subtitle: 'Destination weddings designed around you. From intimate ceremonies to grand celebrations — we orchestrate every moment.'
+    }
+  ];
+
+  const titleEl = document.querySelector('.hero-title');
+  const subtitleEl = document.querySelector('.hero-subtitle');
+  let current = 0;
+
+  function swapText(index) {
+    if (!titleEl || !subtitleEl) return;
+    titleEl.classList.add('hero-text-transitioning');
+    subtitleEl.classList.add('hero-text-transitioning');
+    setTimeout(() => {
+      titleEl.innerHTML = slides[index].title;
+      subtitleEl.textContent = slides[index].subtitle;
+      titleEl.classList.remove('hero-text-transitioning');
+      subtitleEl.classList.remove('hero-text-transitioning');
+    }, 400);
+  }
+
+  function goTo(index) {
+    vids[current].classList.remove('active');
+    dots[current] && dots[current].classList.remove('active');
+    current = index;
+    vids[current].classList.add('active');
+    dots[current] && dots[current].classList.add('active');
+    vids[current].currentTime = 0;
+    vids[current].play().catch(() => {});
+    swapText(current);
+  }
+
+  vids.forEach((vid, i) => {
+    vid.addEventListener('ended', () => {
+      goTo((i + 1) % vids.length);
+    });
+  });
+
+  dots.forEach((dot, i) => {
+    dot.addEventListener('click', () => goTo(i));
+  });
+
+  vids[0].play().catch(() => {});
+}
+
+// ============================================
+// 22. CONSOLE BRANDING
 // ============================================
 
 console.log('%c🏝️ Holidays by Baarik', 'font-size: 24px; font-weight: bold; color: #F1C40F;');
