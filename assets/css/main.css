@@ -523,6 +523,15 @@ a:hover {
   background: rgba(253, 255, 252, 0.08);
 }
 
+.form-select option {
+  background: #0a1628;
+  color: var(--champagne-white);
+}
+
+select {
+  color-scheme: dark;
+}
+
 .form-input::placeholder {
   color: rgba(253, 255, 252, 0.4);
 }
