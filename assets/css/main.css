@@ -1350,3 +1350,36 @@ select {
     --sunset-gold: #FFD700;
   }
 }
+
+.btn-cta-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-width: 220px;
+  padding: 16px 36px;
+  font-family: var(--font-body);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #C9A84C;
+  border: 1.5px solid #C9A84C;
+  background: transparent;
+  border-radius: 0;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+}
+.btn-cta-ghost:hover {
+  background: rgba(201, 168, 76, 0.1);
+  color: #C9A84C;
+  border-color: #C9A84C;
+}
+.cta-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+}
