@@ -403,7 +403,7 @@ a:hover {
 
 .btn-primary {
   background: #C9A84C;
-  color: #011627;
+  color: #011627 !important;
 }
 
 .btn-primary:hover {
