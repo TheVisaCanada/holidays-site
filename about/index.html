@@ -1,27 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2KLE1FELRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2KLE1FELRL');
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="About Holidays by Baarik. TICO-registered travel agency in Mississauga, Ontario. Premium travel experiences for Canadian families and executives.">
-  <title>About Us | TICO-Registered Luxury Travel | Holidays by Baarik</title>
+  <link rel="canonical" href="https://holidays.baariktravel.ca/about/">
+  <meta name="description" content="About Holidays by Baarik. TICO registration pending travel agency in Mississauga, Ontario. Premium travel experiences for Canadian families and executives.">
+  <title>About Us | TICO Registration Pending | Luxury Travel | Holidays by Baarik</title>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/main.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/lenis@1.0.42/bundled/lenis.min.js"></script>
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "AboutPage",
     "mainEntity": {
-      "@type": "TravelAgency",
+      "@type": [
+        "TravelAgency",
+        "LocalBusiness"
+      ],
       "name": "Baarik Travel & Tours Inc.",
-      "description": "TICO-registered luxury travel agency",
+      "description": "TICO registration pending luxury travel agency",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "1965 Britannia Road West, Unit 208",
@@ -29,10 +41,48 @@
         "addressRegion": "ON",
         "postalCode": "L5M 4Y4",
         "addressCountry": "CA"
-      }
+      },
+      "telephone": "+16472497545",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 43.589,
+        "longitude": -79.6441
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Mississauga"
+        },
+        {
+          "@type": "City",
+          "name": "Toronto"
+        },
+        {
+          "@type": "City",
+          "name": "Brampton"
+        },
+        {
+          "@type": "City",
+          "name": "Oakville"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Ontario"
+        }
+      ]
     }
   }
   </script>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Holidays by Baarik">
+  <meta property="og:title" content="About Baarik Holidays | Luxury Travel Agency Mississauga">
+  <meta property="og:description" content="Meet the team behind Baarik Holidays. TICO registration pending luxury travel experts serving Mississauga, Toronto and the GTA.">
+  <meta property="og:url" content="https://holidays.baariktravel.ca/about/">
+  <meta property="og:image" content="https://holidays.baariktravel.ca/assets/images/hero-yacht.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@baariktravel">
 </head>
 <body>
   <div class="loading-screen">
@@ -126,7 +176,7 @@
             </div>
           </div>
           <div class="story-image reveal-right">
-            <img src="../assets/images/wedding-palace.jpg" alt="Baarik experience">
+            <img loading="lazy" src="../assets/images/wedding-palace.jpg" alt="Baarik experience">
             <div class="story-badge">
               <span class="stat-number" data-counter="15" data-suffix="+">0</span>
               <span class="stat-label">Years in Travel</span>
@@ -151,7 +201,7 @@
                 <text x="24" y="30" text-anchor="middle" font-size="12" fill="currentColor" font-weight="bold">TICO</text>
               </svg>
             </div>
-            <h3>TICO Registered</h3>
+            <h3>TICO Registration Pending</h3>
             <p class="credential-number">Registration Pending</p>
             <p>Ontario Travel Industry Council registration ensures your bookings are protected under the Travel Industry Act, 2002.</p>
           </div>
@@ -262,7 +312,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="footer-logo"><img src="../barrik-logo-blue.png" alt="Baarik Travel" height="40" style="display:block;"></div>
-          <p class="footer-tagline">Premium travel for families who value quality. TICO-registered, proudly Canadian.</p>
+          <p class="footer-tagline">Premium travel for families who value quality. TICO registration pending, proudly Canadian.</p>
           <div class="tico-badge">
             <svg viewBox="0 0 48 32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect x="2" y="2" width="44" height="28" rx="4" stroke="#F1C40F" stroke-width="2"/>
@@ -273,7 +323,7 @@
         </div>
 
         <div class="footer-column">
-          <h4 class="footer-heading">Experiences</h4>
+          <p class="footer-heading">Experiences</p>
           <ul class="footer-links">
             <li><a href="/cruises/">Luxury Cruises</a></li>
             <li><a href="/weddings/">Destination Weddings</a></li>
@@ -284,7 +334,7 @@
         </div>
 
         <div class="footer-column">
-          <h4 class="footer-heading">Company</h4>
+          <p class="footer-heading">Company</p>
           <ul class="footer-links">
             <li><a href="/about/">About Us</a></li>
             <li><a href="/journal/">Journal</a></li>
@@ -295,7 +345,7 @@
         </div>
 
         <div class="footer-column">
-          <h4 class="footer-heading">Connect</h4>
+          <p class="footer-heading">Connect</p>
           <ul class="footer-links">
             <li><a href="https://wa.me/16472497545" target="_blank">WhatsApp</a></li>
             <li><a href="#" data-coming-soon>Instagram</a></li>

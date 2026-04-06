@@ -1,8 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2KLE1FELRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2KLE1FELRL');
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="canonical" href="https://holidays.baariktravel.ca/bespoke/">
   <meta name="description" content="Bespoke luxury travel by Baarik. Private island buyouts, celebrity coordination, and experiences beyond imagination. Price on request.">
   <title>Bespoke Travel | Price on Request | Holidays by Baarik</title>
   
@@ -10,34 +19,68 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/main.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/lenis@1.0.42/bundled/lenis.min.js"></script>
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Service",
+    "@type": [
+      "TravelAgency",
+      "LocalBusiness"
+    ],
     "name": "Bespoke Travel — Holidays by Baarik",
     "description": "Fully custom travel experiences: private island buyouts, royal weddings, yacht fleet charters, and once-in-a-lifetime moments. Price on request.",
-    "provider": {
-      "@type": "TravelAgency",
-      "name": "Holidays by Baarik",
-      "telephone": "+1-647-249-7545",
-      "email": "holidays@baariktravel.ca",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "1965 Britannia Road West, Unit 208",
-        "addressLocality": "Mississauga",
-        "addressRegion": "ON",
-        "postalCode": "L5M 4Y4",
-        "addressCountry": "CA"
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Mississauga"
+      },
+      {
+        "@type": "City",
+        "name": "Toronto"
+      },
+      {
+        "@type": "City",
+        "name": "Brampton"
+      },
+      {
+        "@type": "City",
+        "name": "Oakville"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Ontario"
       }
+    ],
+    "priceRange": "$",
+    "telephone": "+16472497545",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 43.589,
+      "longitude": -79.6441
     },
-    "areaServed": {"@type": "Country", "name": "Canada"},
-    "priceRange": "$$"
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1965 Britannia Road West, Unit 208",
+      "addressLocality": "Mississauga",
+      "addressRegion": "ON",
+      "postalCode": "L5M 4Y4",
+      "addressCountry": "CA"
+    }
   }
   </script>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Holidays by Baarik">
+  <meta property="og:title" content="Bespoke Luxury Travel | Custom Itineraries | Baarik">
+  <meta property="og:description" content="Fully custom luxury travel itineraries designed around you. No templates. Personal travel architects for discerning Canadian families.">
+  <meta property="og:url" content="https://holidays.baariktravel.ca/bespoke/">
+  <meta property="og:image" content="https://holidays.baariktravel.ca/assets/images/hero-yacht.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@baariktravel">
 </head>
 <body>
   <div class="loading-screen">
@@ -110,7 +153,7 @@
         
         <div class="bespoke-grid">
           <div class="bespoke-card large reveal">
-            <img src="../assets/images/private-island.jpg" alt="Private island">
+            <img loading="lazy" src="../assets/images/private-island.jpg" alt="Private island">
             <div class="bespoke-content">
               <span class="badge badge-vvip">Ultimate Exclusivity</span>
               <h3>Private Island Buyouts</h3>
@@ -125,7 +168,7 @@
           </div>
           
           <div class="bespoke-card reveal stagger-1">
-            <img src="../assets/images/wedding-palace.jpg" alt="Royal wedding">
+            <img loading="lazy" src="../assets/images/wedding-palace.jpg" alt="Royal wedding">
             <div class="bespoke-content">
               <h3>Royal Weddings</h3>
               <p>Celebrations fit for royalty in historic palaces and estates.</p>
@@ -133,7 +176,7 @@
           </div>
           
           <div class="bespoke-card reveal stagger-2">
-            <img src="../assets/images/hero-yacht.jpg" alt="Mega yacht">
+            <img loading="lazy" src="../assets/images/hero-yacht.jpg" alt="Mega yacht">
             <div class="bespoke-content">
               <h3>Yacht Fleet Charters</h3>
               <p>Multiple vessels for grand celebrations at sea.</p>
@@ -141,7 +184,7 @@
           </div>
           
           <div class="bespoke-card reveal">
-            <img src="../assets/images/destination-turkey.jpg" alt="Hot air balloons">
+            <img loading="lazy" src="../assets/images/destination-turkey.jpg" alt="Hot air balloons">
             <div class="bespoke-content">
               <h3>Once-in-a-Lifetime Moments</h3>
               <p>Sunrise proposals, private concerts, and magical experiences.</p>
@@ -149,7 +192,7 @@
           </div>
           
           <div class="bespoke-card reveal stagger-1">
-            <img src="../assets/images/corporate-retreat.jpg" alt="Executive retreat">
+            <img loading="lazy" src="../assets/images/corporate-retreat.jpg" alt="Executive retreat">
             <div class="bespoke-content">
               <h3>Executive Summits</h3>
               <p>Board meetings in the world's most exclusive locations.</p>
@@ -199,7 +242,7 @@
             </div>
           </div>
           <div class="process-image reveal-right">
-            <img src="../assets/images/destination-switzerland.jpg" alt="Bespoke experience">
+            <img loading="lazy" src="../assets/images/destination-switzerland.jpg" alt="Bespoke experience">
           </div>
         </div>
       </div>
@@ -222,7 +265,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="footer-logo"><img src="../barrik-logo-blue.png" alt="Baarik Travel" height="40" style="display:block;"></div>
-          <p class="footer-tagline">Premium travel for families who value quality. TICO-registered, proudly Canadian.</p>
+          <p class="footer-tagline">Premium travel for families who value quality. TICO registration pending, proudly Canadian.</p>
           <div class="tico-badge">
             <svg viewBox="0 0 48 32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect x="2" y="2" width="44" height="28" rx="4" stroke="#F1C40F" stroke-width="2"/>
@@ -233,7 +276,7 @@
         </div>
 
         <div class="footer-column">
-          <h4 class="footer-heading">Experiences</h4>
+          <p class="footer-heading">Experiences</p>
           <ul class="footer-links">
             <li><a href="/cruises/">Luxury Cruises</a></li>
             <li><a href="/weddings/">Destination Weddings</a></li>
@@ -244,7 +287,7 @@
         </div>
 
         <div class="footer-column">
-          <h4 class="footer-heading">Company</h4>
+          <p class="footer-heading">Company</p>
           <ul class="footer-links">
             <li><a href="/about/">About Us</a></li>
             <li><a href="/journal/">Journal</a></li>
@@ -255,7 +298,7 @@
         </div>
 
         <div class="footer-column">
-          <h4 class="footer-heading">Connect</h4>
+          <p class="footer-heading">Connect</p>
           <ul class="footer-links">
             <li><a href="https://wa.me/16472497545" target="_blank">WhatsApp</a></li>
             <li><a href="#" data-coming-soon>Instagram</a></li>

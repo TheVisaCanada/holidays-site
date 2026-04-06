@@ -1,27 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2KLE1FELRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2KLE1FELRL');
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contact Holidays by Baarik. Reserve your travel consultation. WhatsApp +1-647-249-7545. TICO-registered travel agency in Mississauga, Ontario.">
+  <link rel="canonical" href="https://holidays.baariktravel.ca/contact/">
+  <meta name="description" content="Contact Holidays by Baarik. Reserve your travel consultation. WhatsApp +1-647-249-7545. TICO registration pending travel agency in Mississauga, Ontario.">
   <title>Contact Us | Reserve Your Consultation | Holidays by Baarik</title>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/main.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/lenis@1.0.42/bundled/lenis.min.js"></script>
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ContactPage",
     "mainEntity": {
-      "@type": "TravelAgency",
+      "@type": [
+        "TravelAgency",
+        "LocalBusiness"
+      ],
       "name": "Baarik Travel & Tours Inc.",
-      "telephone": "+1-647-249-7545",
+      "telephone": "+16472497545",
       "email": "holidays@baariktravel.ca",
       "address": {
         "@type": "PostalAddress",
@@ -32,7 +44,34 @@
         "addressCountry": "CA"
       },
       "openingHours": "Mo-Fr 09:00-18:00",
-      "priceRange": "$$$"
+      "priceRange": "$$$",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 43.589,
+        "longitude": -79.6441
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Mississauga"
+        },
+        {
+          "@type": "City",
+          "name": "Toronto"
+        },
+        {
+          "@type": "City",
+          "name": "Brampton"
+        },
+        {
+          "@type": "City",
+          "name": "Oakville"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Ontario"
+        }
+      ]
     }
   }
   </script>
@@ -93,6 +132,16 @@
     ]
   }
   </script>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Holidays by Baarik">
+  <meta property="og:title" content="Contact Baarik Holidays | Book Your Travel Consultation">
+  <meta property="og:description" content="Speak with a Travel Architect at Baarik Holidays. Request a consultation for luxury travel from Mississauga and the GTA.">
+  <meta property="og:url" content="https://holidays.baariktravel.ca/contact/">
+  <meta property="og:image" content="https://holidays.baariktravel.ca/assets/images/hero-yacht.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@baariktravel">
 </head>
 <body>
   <div class="loading-screen">
@@ -258,6 +307,7 @@
                 <textarea id="message" name="message" class="form-textarea" rows="4" placeholder="Share your dream destination, preferred dates, group size, and any special requirements..."></textarea>
               </div>
               
+              <div id="form-validation-error" class="form-submit-error" style="display:none;color:#e74c3c;text-align:center;margin-bottom:var(--space-3);"></div>
               <button type="submit" class="btn btn-primary btn-full">Request Consultation</button>
               
               <p class="form-disclaimer">By submitting this form, you agree to our privacy policy. Your information is protected and will never be shared.</p>
@@ -309,7 +359,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="footer-logo"><img src="../barrik-logo-blue.png" alt="Baarik Travel" height="40" style="display:block;"></div>
-          <p class="footer-tagline">Premium travel for families who value quality. TICO-registered, proudly Canadian.</p>
+          <p class="footer-tagline">Premium travel for families who value quality. TICO registration pending, proudly Canadian.</p>
           <div class="tico-badge">
             <svg viewBox="0 0 48 32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect x="2" y="2" width="44" height="28" rx="4" stroke="#F1C40F" stroke-width="2"/>
@@ -320,7 +370,7 @@
         </div>
 
         <div class="footer-column">
-          <h4 class="footer-heading">Experiences</h4>
+          <p class="footer-heading">Experiences</p>
           <ul class="footer-links">
             <li><a href="/cruises/">Luxury Cruises</a></li>
             <li><a href="/weddings/">Destination Weddings</a></li>
@@ -331,7 +381,7 @@
         </div>
 
         <div class="footer-column">
-          <h4 class="footer-heading">Company</h4>
+          <p class="footer-heading">Company</p>
           <ul class="footer-links">
             <li><a href="/about/">About Us</a></li>
             <li><a href="/journal/">Journal</a></li>
@@ -342,7 +392,7 @@
         </div>
 
         <div class="footer-column">
-          <h4 class="footer-heading">Connect</h4>
+          <p class="footer-heading">Connect</p>
           <ul class="footer-links">
             <li><a href="https://wa.me/16472497545" target="_blank">WhatsApp</a></li>
             <li><a href="#" data-coming-soon>Instagram</a></li>
@@ -356,7 +406,7 @@
         <p class="footer-legal">
           &copy; 2026 Baarik Travel &amp; Tours Inc. All rights reserved. TICO Registration Pending.
           Ontario residents: You have a 10-day free-look period for cancellation and full refund on travel services.
-          <a href="/privacy.html">Privacy Policy</a> | <a href="/terms.html">Terms of Service</a>
+          <a href="/privacy.html">Privacy Policy</a> | <a href="/terms.html">Terms of Service</a> | <a href="/guides.html">Travel Guides</a>
         </p>
         <div class="footer-social">
           <a href="https://wa.me/16472497545" target="_blank" aria-label="WhatsApp">
@@ -396,23 +446,53 @@
       var phone = document.getElementById('phone').value.trim();
       var interest = document.getElementById('interest').value;
       var message = document.getElementById('message').value.trim();
+      var validationError = document.getElementById('form-validation-error');
       if (!firstName || !lastName || !email || !phone || !interest) {
-        alert('Please fill in all required fields.');
+        validationError.textContent = 'Please fill in all required fields.';
+        validationError.style.display = 'block';
         return;
       }
-      var interestLabels = {
-        leisure: 'Leisure Travel', wedding: 'Destination Wedding',
-        corporate: 'Corporate Retreat', cruise: 'Yacht Charter', bespoke: 'Bespoke Experience'
+      validationError.style.display = 'none';
+      var params = new URLSearchParams(window.location.search);
+      var payload = {
+        firstName: firstName,
+        lastName: lastName,
+        email: email,
+        phone: phone,
+        interest: interest,
+        message: message,
+        source_url: window.location.href,
+        utm_source: params.get('utm_source') || '',
+        utm_medium: params.get('utm_medium') || '',
+        utm_campaign: params.get('utm_campaign') || ''
       };
-      var body = 'Name: ' + firstName + ' ' + lastName + '\n' +
-                 'Email: ' + email + '\n' +
-                 'Phone: ' + phone + '\n' +
-                 'Interested In: ' + (interestLabels[interest] || interest) + '\n\n' +
-                 'Message:\n' + (message || '(none provided)');
-      var mailto = 'mailto:holidays@baariktravel.ca' +
-                   '?subject=' + encodeURIComponent('Holiday Package Inquiry') +
-                   '&body=' + encodeURIComponent(body);
-      window.location.href = mailto;
+      var btn = form.querySelector('button[type="submit"]');
+      var originalText = btn.textContent;
+      btn.disabled = true;
+      btn.textContent = 'Sending…';
+      fetch('https://n8n.baariktravel.ca/webhook/holidays-contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      }).then(function(res) {
+        if (!res.ok) throw new Error('server error');
+        form.innerHTML = '<div style="text-align:center;padding:var(--space-8) 0;">' +
+          '<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 24 24" stroke="var(--sunset-gold)" stroke-width="1.5" style="margin-bottom:var(--space-4)"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>' +
+          '<h3 style="margin-bottom:var(--space-2);">Thank You!</h3>' +
+          '<p style="color:rgba(253,255,252,0.7);">Your message has been received. A Travel Architect will be in touch within 24 hours.</p>' +
+          '</div>';
+      }).catch(function() {
+        btn.disabled = false;
+        btn.textContent = originalText;
+        var err = form.querySelector('.form-submit-error');
+        if (!err) {
+          err = document.createElement('p');
+          err.className = 'form-submit-error';
+          err.style.cssText = 'color:#e74c3c;text-align:center;margin-top:var(--space-3);';
+          btn.parentNode.insertBefore(err, btn.nextSibling);
+        }
+        err.textContent = 'Something went wrong. Please try WhatsApp: +1 (647) 249-7545';
+      });
     });
   })();
   </script>

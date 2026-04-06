@@ -877,10 +877,16 @@ function initVideoHero() {
     vids[current].classList.remove('active');
     dots[current] && dots[current].classList.remove('active');
     current = index;
-    vids[current].classList.add('active');
+    const targetVid = vids[current];
+    // Lazy-load video src on first switch to that slide
+    if (targetVid.dataset.src && !targetVid.src) {
+      targetVid.src = targetVid.dataset.src;
+      targetVid.load();
+    }
+    targetVid.classList.add('active');
     dots[current] && dots[current].classList.add('active');
-    vids[current].currentTime = 0;
-    vids[current].play().catch(() => {});
+    targetVid.currentTime = 0;
+    targetVid.play().catch(() => {});
     swapText(current);
   }
 

@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2KLE1FELRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2KLE1FELRL');
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Destination Wedding Planning by Baarik. Beach, palace, mountain, and private island weddings for 10-500 guests. TICO-registered. Halal catering available.">
+  <link rel="canonical" href="https://holidays.baariktravel.ca/weddings/">
+  <meta name="description" content="Destination Wedding Planning by Baarik. Beach, palace, mountain, and private island weddings for 10-500 guests. TICO registration pending. Halal catering available.">
   <title>Destination Weddings | The Ceremony of a Lifetime | Holidays by Baarik</title>
   
   <!-- Fonts -->
@@ -15,15 +24,18 @@
   <link rel="stylesheet" href="../assets/css/main.css">
   
   <!-- GSAP -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/lenis@1.0.42/bundled/lenis.min.js"></script>
 
   <!-- JSON-LD -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Service",
+    "@type": [
+      "TravelAgency",
+      "LocalBusiness"
+    ],
     "name": "Destination Wedding Planning",
     "description": "Destination wedding planning for Canadian couples. Beach, palace, mountain, and private island weddings worldwide. Halal catering available.",
     "provider": {
@@ -38,7 +50,28 @@
         "addressCountry": "CA"
       }
     },
-    "areaServed": "Worldwide",
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Mississauga"
+      },
+      {
+        "@type": "City",
+        "name": "Toronto"
+      },
+      {
+        "@type": "City",
+        "name": "Brampton"
+      },
+      {
+        "@type": "City",
+        "name": "Oakville"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Ontario"
+      }
+    ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "Wedding Packages",
@@ -65,9 +98,33 @@
           }
         }
       ]
+    },
+    "telephone": "+16472497545",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 43.589,
+      "longitude": -79.6441
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1965 Britannia Road West, Unit 208",
+      "addressLocality": "Mississauga",
+      "addressRegion": "ON",
+      "postalCode": "L5M 4Y4",
+      "addressCountry": "CA"
     }
   }
   </script>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Holidays by Baarik">
+  <meta property="og:title" content="Destination Wedding Packages from Toronto | Baarik">
+  <meta property="og:description" content="Plan your dream destination wedding with Baarik Holidays. Maldives, Morocco, Italy and more. Serving Mississauga and GTA families.">
+  <meta property="og:url" content="https://holidays.baariktravel.ca/weddings/">
+  <meta property="og:image" content="https://holidays.baariktravel.ca/assets/images/hero-yacht.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@baariktravel">
 </head>
 <body>
   <!-- Loading Screen -->
@@ -160,7 +217,7 @@
           <!-- Beach -->
           <div class="venue-card reveal" data-cursor-text="Dream">
             <div class="venue-image">
-              <img src="../assets/images/wedding-beach.jpg" alt="Beach wedding">
+              <img loading="lazy" src="../assets/images/wedding-beach.jpg" alt="Beach wedding">
               <div class="venue-overlay">
                 <span class="venue-guests">10-200 Guests</span>
               </div>
@@ -179,7 +236,7 @@
           <!-- Palace -->
           <div class="venue-card reveal stagger-1" data-cursor-text="Dream">
             <div class="venue-image">
-              <img src="../assets/images/wedding-palace.jpg" alt="Palace wedding">
+              <img loading="lazy" src="../assets/images/wedding-palace.jpg" alt="Palace wedding">
               <div class="venue-overlay">
                 <span class="venue-guests">50-500 Guests</span>
               </div>
@@ -198,7 +255,7 @@
           <!-- Mountain -->
           <div class="venue-card reveal stagger-2" data-cursor-text="Dream">
             <div class="venue-image">
-              <img src="../assets/images/wedding-mountain.jpg" alt="Mountain wedding">
+              <img loading="lazy" src="../assets/images/wedding-mountain.jpg" alt="Mountain wedding">
               <div class="venue-overlay">
                 <span class="venue-guests">20-150 Guests</span>
               </div>
@@ -217,7 +274,7 @@
           <!-- Private Island -->
           <div class="venue-card reveal stagger-3" data-cursor-text="Dream">
             <div class="venue-image">
-              <img src="../assets/images/private-island.jpg" alt="Private island wedding">
+              <img loading="lazy" src="../assets/images/private-island.jpg" alt="Private island wedding">
               <div class="venue-overlay">
                 <span class="venue-guests">VVIP Exclusive</span>
               </div>
@@ -281,7 +338,7 @@
           </div>
           
           <div class="process-image reveal-right">
-            <img src="../assets/images/wedding-palace.jpg" alt="Wedding planning">
+            <img loading="lazy" src="../assets/images/wedding-palace.jpg" alt="Wedding planning">
             <div class="process-stats">
               <div class="process-stat">
                 <span class="stat-number" data-counter="50" data-suffix="+">0</span>
@@ -397,7 +454,7 @@
             </cite>
           </div>
           <div class="testimonial-image">
-            <img src="../assets/images/hero-maldives.jpg" alt="Wedding couple">
+            <img loading="lazy" src="../assets/images/hero-maldives.jpg" alt="Wedding couple">
           </div>
         </div>
       </div>
@@ -421,7 +478,7 @@
             </div>
           </div>
           <div class="cta-image">
-            <img src="../assets/images/wedding-mountain.jpg" alt="Wedding celebration">
+            <img loading="lazy" src="../assets/images/wedding-mountain.jpg" alt="Wedding celebration">
           </div>
         </div>
       </div>
@@ -434,7 +491,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="footer-logo"><img src="../barrik-logo-blue.png" alt="Baarik Travel" height="40" style="display:block;"></div>
-          <p class="footer-tagline">Premium travel for families who value quality. TICO-registered, proudly Canadian.</p>
+          <p class="footer-tagline">Premium travel for families who value quality. TICO registration pending, proudly Canadian.</p>
           <div class="tico-badge">
             <svg viewBox="0 0 48 32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect x="2" y="2" width="44" height="28" rx="4" stroke="#F1C40F" stroke-width="2"/>
@@ -445,7 +502,7 @@
         </div>
 
         <div class="footer-column">
-          <h4 class="footer-heading">Experiences</h4>
+          <p class="footer-heading">Experiences</p>
           <ul class="footer-links">
             <li><a href="/cruises/">Luxury Cruises</a></li>
             <li><a href="/weddings/">Destination Weddings</a></li>
@@ -456,7 +513,7 @@
         </div>
 
         <div class="footer-column">
-          <h4 class="footer-heading">Company</h4>
+          <p class="footer-heading">Company</p>
           <ul class="footer-links">
             <li><a href="/about/">About Us</a></li>
             <li><a href="/journal/">Journal</a></li>
@@ -467,7 +524,7 @@
         </div>
 
         <div class="footer-column">
-          <h4 class="footer-heading">Connect</h4>
+          <p class="footer-heading">Connect</p>
           <ul class="footer-links">
             <li><a href="https://wa.me/16472497545" target="_blank">WhatsApp</a></li>
             <li><a href="#" data-coming-soon>Instagram</a></li>

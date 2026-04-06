@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2KLE1FELRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2KLE1FELRL');
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Holidays by Baarik — premium travel packages from Mississauga. Cruises, destination weddings, and family holiday packages. TICO-registered travel agency serving the GTA.">
+  <link rel="canonical" href="https://holidays.baariktravel.ca/">
+  <meta name="description" content="Holidays by Baarik — premium travel packages from Mississauga. Cruises, destination weddings, and family holiday packages. TICO registration pending travel agency serving the GTA.">
   <meta name="keywords" content="luxury travel, halal travel, destination weddings, mega yacht cruises, TICO registered, Muslim friendly travel, Maldives, Dubai, corporate retreats">
   <meta name="author" content="Baarik Travel & Tours Inc.">
-  <meta name="theme-color" content="#011627">
+  <meta name="theme-color" content="#00ADEF">
   
   <!-- Open Graph -->
   <meta property="og:title" content="Holidays by Baarik | Premium Travel">
-  <meta property="og:description" content="Premium travel packages for Canadian families. Cruises, destination weddings, and tailored holidays. TICO-registered.">
+  <meta property="og:description" content="Premium travel packages for Canadian families. Cruises, destination weddings, and tailored holidays. TICO registration pending.">
   <meta property="og:image" content="https://holidays.baariktravel.ca/assets/images/hero-yacht.jpg">
   <meta property="og:url" content="https://holidays.baariktravel.ca">
   <meta property="og:type" content="website">
@@ -18,7 +27,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Holidays by Baarik | Premium Travel">
-  <meta name="twitter:description" content="Premium travel packages for Canadian families. TICO-registered.">
+  <meta name="twitter:description" content="Premium travel packages for Canadian families. TICO registration pending.">
   <meta name="twitter:image" content="https://holidays.baariktravel.ca/assets/images/hero-yacht.jpg">
   
   <title>Holidays by Baarik | Premium Travel & Destination Weddings</title>
@@ -26,17 +35,20 @@
   <!-- Preconnect -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
   
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
   <!-- Styles -->
-  <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/main.css">
   
   <!-- GSAP -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/lenis@1.0.42/bundled/lenis.min.js"></script>
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏝️</text></svg>">
@@ -45,13 +57,16 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "TravelAgency",
-    "name": "Holidays by Baarik",
+    "@type": [
+      "TravelAgency",
+      "LocalBusiness"
+    ],
+    "name": "Baarik Travel & Tours Inc.",
     "alternateName": "Baarik Travel & Tours Inc.",
-    "description": "TICO-registered travel agency specializing in premium cruises, destination weddings, and tailored travel experiences for Canadian families.",
+    "description": "TICO registration pending travel agency specializing in premium cruises, destination weddings, and tailored travel experiences for Canadian families.",
     "url": "https://holidays.baariktravel.ca",
     "logo": "https://holidays.baariktravel.ca/barrik-logo-blue.png",
-    "telephone": "+1-647-249-7545",
+    "telephone": "+16472497545",
     "email": "holidays@baariktravel.ca",
     "address": {
       "@type": "PostalAddress",
@@ -63,20 +78,44 @@
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": "43.5890",
-      "longitude": "-79.6441"
+      "latitude": 43.589,
+      "longitude": -79.6441
     },
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
       "opens": "09:00",
       "closes": "18:00"
     },
     "priceRange": "$$$",
-    "areaServed": {
-      "@type": "Country",
-      "name": "Canada"
-    },
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Mississauga"
+      },
+      {
+        "@type": "City",
+        "name": "Toronto"
+      },
+      {
+        "@type": "City",
+        "name": "Brampton"
+      },
+      {
+        "@type": "City",
+        "name": "Oakville"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Ontario"
+      }
+    ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "Luxury Travel Services",
@@ -122,7 +161,7 @@
 <body>
   <!-- Loading Screen -->
   <div class="loading-screen">
-    <img src="barrik-logo-blue.png" alt="Baarik" height="40" style="display:block;">
+    <img src="barrik-logo-blue.png" alt="Baarik" width="201" height="40" style="display:block;">
     <div class="loading-bar">
       <div class="loading-bar-inner"></div>
     </div>
@@ -139,7 +178,7 @@
   <nav class="nav">
     <div class="nav-inner">
       <a href="/" class="nav-logo">
-        <img src="barrik-logo-blue.png" alt="Holidays by Baarik" height="40" style="display:block;">
+        <img src="barrik-logo-blue.png" alt="Holidays by Baarik" width="201" height="40" style="display:block;">
       </a>
 
       <div class="nav-links">
@@ -185,14 +224,14 @@
     <!-- Hero Section -->
     <section class="section section-hero" id="hero">
       <div class="hero-bg">
-        <video class="hero-vid active" id="vid-0" src="assets/videos/hero-cruise-web.mp4" muted playsinline autoplay></video>
-        <video class="hero-vid" id="vid-1" src="assets/videos/hero-beach-web.mp4" muted playsinline></video>
-        <video class="hero-vid" id="vid-2" src="assets/videos/hero-wedding-web.mp4" muted playsinline></video>
+        <video class="hero-vid active" id="vid-0" src="assets/videos/hero-cruise-web.mp4" poster="assets/images/hero-yacht.jpg" preload="metadata" muted playsinline autoplay></video>
+        <video class="hero-vid" id="vid-1" data-src="assets/videos/hero-beach-web.mp4" poster="assets/images/hero-maldives.jpg" preload="none" muted playsinline></video>
+        <video class="hero-vid" id="vid-2" data-src="assets/videos/hero-wedding-web.mp4" poster="assets/images/wedding-beach.jpg" preload="none" muted playsinline></video>
         <div class="video-overlay"></div>
       </div>
 
       <div class="hero-content">
-        <p class="section-subheading reveal">TICO-Registered Luxury Travel</p>
+        <p class="section-subheading reveal">TICO Registration Pending | Luxury Travel</p>
         <h1 class="hero-title reveal stagger-1">The Art of<br>the Escape</h1>
         <p class="hero-subtitle reveal stagger-2">Premium holidays for families and travellers who value quality. Every detail handled — so you can just enjoy the journey.</p>
         <div class="hero-cta-group reveal stagger-3">
@@ -218,13 +257,14 @@
         <div class="text-center mb-16">
           <p class="section-subheading reveal">Choose Your Journey</p>
           <h2 class="reveal stagger-1">Three Paths to Paradise</h2>
+          <p class="seo-lead reveal stagger-2" style="max-width:700px;margin:1.5rem auto 0;">Holidays by Baarik is a luxury travel agency in Mississauga, Ontario, offering premium holiday packages for GTA families — including halal-friendly vacations, destination weddings, private yacht charters, and corporate retreats. Packages start from $2,200 per person.</p>
         </div>
         
         <div class="grid grid-cols-3 gap-8 paths-grid">
           <!-- Leisure Path -->
           <a href="/packages/leisure.html" class="path-card reveal stagger-1" data-cursor-text="Discover">
             <div class="path-image">
-              <img src="assets/images/hero-maldives.jpg" alt="Maldives overwater villa">
+              <img loading="lazy" src="assets/images/hero-maldives.jpg" alt="Maldives overwater villa">
               <div class="path-overlay"></div>
             </div>
             <div class="path-content">
@@ -238,7 +278,7 @@
           <!-- Wedding Path -->
           <a href="/weddings/" class="path-card reveal stagger-2" data-cursor-text="Dream">
             <div class="path-image">
-              <img src="assets/images/wedding-beach.jpg" alt="Beach wedding ceremony">
+              <img loading="lazy" src="assets/images/wedding-beach.jpg" alt="Beach wedding ceremony">
               <div class="path-overlay"></div>
             </div>
             <div class="path-content">
@@ -252,7 +292,7 @@
           <!-- Corporate Path -->
           <a href="/packages/corporate.html" class="path-card reveal stagger-3" data-cursor-text="Elevate">
             <div class="path-image">
-              <img src="assets/images/corporate-retreat.jpg" alt="Corporate retreat">
+              <img loading="lazy" src="assets/images/corporate-retreat.jpg" alt="Corporate retreat">
               <div class="path-overlay"></div>
             </div>
             <div class="path-content">
@@ -277,7 +317,7 @@
         <div class="destinations-grid">
           <!-- Maldives -->
           <div class="destination-card large reveal" data-cursor-text="Explore">
-            <img src="assets/images/hero-maldives.jpg" alt="Maldives">
+            <img loading="lazy" src="assets/images/hero-maldives.jpg" alt="Maldives">
             <div class="destination-content">
               <span class="badge badge-gold">Most Popular</span>
               <h3>Maldives</h3>
@@ -287,7 +327,7 @@
           
           <!-- Dubai -->
           <div class="destination-card reveal stagger-1" data-cursor-text="Explore">
-            <img src="assets/images/destination-dubai.jpg" alt="Dubai">
+            <img loading="lazy" src="assets/images/destination-dubai.jpg" alt="Dubai">
             <div class="destination-content">
               <h3>Dubai</h3>
               <p>Urban luxury redefined</p>
@@ -296,7 +336,7 @@
           
           <!-- Turkey -->
           <div class="destination-card reveal stagger-2" data-cursor-text="Explore">
-            <img src="assets/images/destination-turkey.jpg" alt="Turkey">
+            <img loading="lazy" src="assets/images/destination-turkey.jpg" alt="Turkey">
             <div class="destination-content">
               <h3>Turkey</h3>
               <p>Where East meets West</p>
@@ -305,7 +345,7 @@
           
           <!-- Switzerland -->
           <div class="destination-card reveal stagger-3" data-cursor-text="Explore">
-            <img src="assets/images/destination-switzerland.jpg" alt="Switzerland">
+            <img loading="lazy" src="assets/images/destination-switzerland.jpg" alt="Switzerland">
             <div class="destination-content">
               <h3>Switzerland</h3>
               <p>Alpine elegance</p>
@@ -347,7 +387,7 @@
           </div>
           
           <div class="fleet-image reveal-right">
-            <img src="assets/images/yacht-deck.jpg" alt="Luxury yacht deck">
+            <img loading="lazy" src="assets/images/yacht-deck.jpg" width="800" height="457" alt="Luxury yacht deck">
             <div class="fleet-floating-card">
               <span class="badge badge-vvip">VVIP Experience</span>
               <p>"The most luxurious week of our lives"</p>
@@ -369,7 +409,7 @@
         
         <div class="wedding-categories">
           <div class="wedding-card reveal" data-cursor-text="Dream">
-            <img src="assets/images/wedding-beach.jpg" alt="Beach wedding">
+            <img loading="lazy" src="assets/images/wedding-beach.jpg" alt="Beach wedding">
             <div class="wedding-content">
               <h3>Beach</h3>
               <p>Golden sands, ocean vows</p>
@@ -377,7 +417,7 @@
           </div>
           
           <div class="wedding-card reveal stagger-1" data-cursor-text="Dream">
-            <img src="assets/images/wedding-palace.jpg" alt="Palace wedding">
+            <img loading="lazy" src="assets/images/wedding-palace.jpg" alt="Palace wedding">
             <div class="wedding-content">
               <h3>Palace</h3>
               <p>Royal elegance, timeless beauty</p>
@@ -385,7 +425,7 @@
           </div>
           
           <div class="wedding-card reveal stagger-2" data-cursor-text="Dream">
-            <img src="assets/images/wedding-mountain.jpg" alt="Mountain wedding">
+            <img loading="lazy" src="assets/images/wedding-mountain.jpg" alt="Mountain wedding">
             <div class="wedding-content">
               <h3>Mountain</h3>
               <p>Alpine majesty, nature's cathedral</p>
@@ -393,7 +433,7 @@
           </div>
           
           <div class="wedding-card reveal stagger-3" data-cursor-text="Dream">
-            <img src="assets/images/private-island.jpg" alt="Private island wedding">
+            <img loading="lazy" src="assets/images/private-island.jpg" alt="Private island wedding">
             <div class="wedding-content">
               <h3>Private Island</h3>
               <p>Exclusive paradise, just for you</p>
@@ -413,7 +453,7 @@
         <div class="trust-narrative reveal">
           <h2 class="trust-narrative-title">Your Journey, Protected</h2>
           <hr class="trust-rule">
-          <p class="trust-narrative-body">Every booking with Baarik is held to a standard most agencies never reach — because we believe the promise of a perfect journey must be backed by the protection to ensure it. As a TICO-registered agency operating under Ontario's Travel Industry Act, your investment is safeguarded from the moment you say yes. Our team brings deep expertise across halal-friendly destinations, private charter logistics, and destination event planning, handling every detail with the care of someone who takes the trip personally. We don't sell packages — we architect experiences, and we stand behind each one completely.</p>
+          <p class="trust-narrative-body">Every booking with Baarik is held to a standard most agencies never reach — because we believe the promise of a perfect journey must be backed by the protection to ensure it. As a TICO registration pending agency operating under Ontario's Travel Industry Act, your investment is safeguarded from the moment you say yes. Our team brings deep expertise across halal-friendly destinations, private charter logistics, and destination event planning, handling every detail with the care of someone who takes the trip personally. We don't sell packages — we architect experiences, and we stand behind each one completely.</p>
           <hr class="trust-rule">
         </div>
       </div>
@@ -429,7 +469,7 @@
         
         <div class="journal-grid">
           <article class="journal-card featured reveal" data-cursor-text="Read">
-            <img src="assets/images/destination-dubai.jpg" alt="Dubai travel guide">
+            <img loading="lazy" src="assets/images/destination-dubai.jpg" alt="Dubai travel guide">
             <div class="journal-content">
               <span class="journal-category">Destinations</span>
               <h3>The Complete Guide to Halal-Friendly Luxury in Dubai</h3>
@@ -439,7 +479,7 @@
           </article>
           
           <article class="journal-card reveal stagger-1" data-cursor-text="Read">
-            <img src="assets/images/wedding-palace.jpg" alt="Wedding planning">
+            <img loading="lazy" src="assets/images/wedding-palace.jpg" alt="Wedding planning">
             <div class="journal-content">
               <span class="journal-category">Weddings</span>
               <h3>Planning a Destination Wedding: The 12-Month Timeline</h3>
@@ -448,7 +488,7 @@
           </article>
           
           <article class="journal-card reveal stagger-2" data-cursor-text="Read">
-            <img src="assets/images/cruise-mediterranean.jpg" alt="Mediterranean cruise">
+            <img loading="lazy" src="assets/images/cruise-mediterranean.jpg" alt="Mediterranean cruise">
             <div class="journal-content">
               <span class="journal-category">Cruises</span>
               <h3>Mediterranean by Mega Yacht: The Ultimate Itinerary</h3>
@@ -481,7 +521,7 @@
             </div>
           </div>
           <div class="cta-image">
-            <img src="assets/images/private-island.jpg" alt="Private island paradise">
+            <img loading="lazy" src="assets/images/private-island.jpg" alt="Private island paradise">
           </div>
         </div>
       </div>
@@ -493,8 +533,8 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <div class="footer-logo"><img src="barrik-logo-blue.png" alt="Baarik Travel" height="40" style="display:block;"></div>
-          <p class="footer-tagline">Premium travel for families who value quality. TICO-registered, proudly Canadian.</p>
+          <div class="footer-logo"><img src="barrik-logo-blue.png" alt="Baarik Travel" width="201" height="40" style="display:block;"></div>
+          <p class="footer-tagline">Premium travel for families who value quality. TICO registration pending, proudly Canadian.</p>
           <div class="tico-badge">
             <svg viewBox="0 0 48 32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect x="2" y="2" width="44" height="28" rx="4" stroke="#F1C40F" stroke-width="2"/>
@@ -505,7 +545,7 @@
         </div>
         
         <div class="footer-column">
-          <h4 class="footer-heading">Experiences</h4>
+          <p class="footer-heading">Experiences</p>
           <ul class="footer-links">
             <li><a href="/cruises/">Luxury Cruises</a></li>
             <li><a href="/weddings/">Destination Weddings</a></li>
@@ -516,7 +556,7 @@
         </div>
         
         <div class="footer-column">
-          <h4 class="footer-heading">Company</h4>
+          <p class="footer-heading">Company</p>
           <ul class="footer-links">
             <li><a href="/about/">About Us</a></li>
             <li><a href="/journal/">Journal</a></li>
@@ -527,7 +567,7 @@
         </div>
         
         <div class="footer-column">
-          <h4 class="footer-heading">Connect</h4>
+          <p class="footer-heading">Connect</p>
           <ul class="footer-links">
             <li><a href="https://wa.me/16472497545" target="_blank">WhatsApp</a></li>
             <li><a href="#" data-coming-soon>Instagram</a></li>
@@ -541,7 +581,7 @@
         <p class="footer-legal">
           © 2026 Baarik Travel & Tours Inc. All rights reserved. TICO Registration Pending.
           Ontario residents: You have a 10-day free-look period for cancellation and full refund on travel services.
-          <a href="/privacy.html">Privacy Policy</a> | <a href="/terms.html">Terms of Service</a>
+          <a href="/privacy.html">Privacy Policy</a> | <a href="/terms.html">Terms of Service</a> | <a href="/guides.html">Travel Guides</a>
         </p>
         <div class="footer-social">
           <a href="https://wa.me/16472497545" target="_blank" aria-label="WhatsApp">
@@ -1193,11 +1233,13 @@
     .vid-dot {
       width: 9px;
       height: 9px;
+      min-width: 44px;
+      min-height: 44px;
       border-radius: 50%;
       background: rgba(201, 168, 76, 0.35);
       border: 1.5px solid rgba(201, 168, 76, 0.7);
       cursor: pointer;
-      padding: 0;
+      padding: 10px;
       transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
     }
 

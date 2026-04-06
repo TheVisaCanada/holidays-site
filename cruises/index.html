@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2KLE1FELRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2KLE1FELRL');
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="The Fleet of Baarik - Private mega yacht charters. Mediterranean, Caribbean, and bespoke itineraries. TICO-registered luxury cruise experiences.">
+  <link rel="canonical" href="https://holidays.baariktravel.ca/cruises/">
+  <meta name="description" content="The Fleet of Baarik - Private mega yacht charters. Mediterranean, Caribbean, and bespoke itineraries. TICO registration pending luxury cruise experiences.">
   <title>The Fleet | Luxury Mega Yacht Charters | Holidays by Baarik</title>
   
   <!-- Fonts -->
@@ -15,40 +24,72 @@
   <link rel="stylesheet" href="../assets/css/main.css">
   
   <!-- GSAP -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/lenis@1.0.42/bundled/lenis.min.js"></script>
 
   <!-- JSON-LD -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Product",
-    "name": "Luxury Mega Yacht Charters",
-    "description": "Private mega yacht charters with halal-certified dining and prayer facilities",
-    "brand": {
-      "@type": "Brand",
-      "name": "Holidays by Baarik"
+    "@type": [
+      "TravelAgency",
+      "LocalBusiness"
+    ],
+    "name": "Baarik Travel & Tours Inc.",
+    "url": "https://holidays.baariktravel.ca",
+    "telephone": "+16472497545",
+    "email": "holidays@baariktravel.ca",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1965 Britannia Road West, Unit 208",
+      "addressLocality": "Mississauga",
+      "addressRegion": "ON",
+      "postalCode": "L5M 4Y4",
+      "addressCountry": "CA"
     },
-    "offers": {
-      "@type": "AggregateOffer",
-      "priceCurrency": "CAD",
-      "availability": "https://schema.org/InStock"
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 43.589,
+      "longitude": -79.6441
     },
-    "provider": {
-      "@type": "TravelAgency",
-      "name": "Baarik Travel & Tours Inc.",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "1965 Britannia Road West, Unit 208",
-        "addressLocality": "Mississauga",
-        "addressRegion": "ON",
-        "postalCode": "L5M 4Y4",
-        "addressCountry": "CA"
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Mississauga"
+      },
+      {
+        "@type": "City",
+        "name": "Toronto"
+      },
+      {
+        "@type": "City",
+        "name": "Brampton"
+      },
+      {
+        "@type": "City",
+        "name": "Oakville"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Ontario"
       }
-    }
+    ],
+    "openingHours": "Mo-Fr 09:00-18:00",
+    "priceRange": "$$$",
+    "description": "Private mega yacht charters with halal-certified dining and prayer facilities"
   }
   </script>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Holidays by Baarik">
+  <meta property="og:title" content="Luxury Yacht Charters & Cruises | Baarik Holidays">
+  <meta property="og:description" content="Private yacht charters and luxury cruise packages from Toronto. Mediterranean, Caribbean and beyond. Book your charter today.">
+  <meta property="og:url" content="https://holidays.baariktravel.ca/cruises/">
+  <meta property="og:image" content="https://holidays.baariktravel.ca/assets/images/hero-yacht.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@baariktravel">
 </head>
 <body>
   <!-- Loading Screen -->
@@ -142,7 +183,7 @@
           <!-- Yacht 1 -->
           <div class="yacht-card reveal" data-cursor-text="Charter">
             <div class="yacht-image">
-              <img src="../assets/images/hero-yacht.jpg" alt="Serenity mega yacht">
+              <img loading="lazy" src="../assets/images/hero-yacht.jpg" alt="Serenity mega yacht">
               <div class="yacht-badge">
                 <span class="badge badge-vvip">Flagship</span>
               </div>
@@ -172,7 +213,7 @@
           <!-- Yacht 2 -->
           <div class="yacht-card reveal stagger-1" data-cursor-text="Charter">
             <div class="yacht-image">
-              <img src="../assets/images/yacht-deck.jpg" alt="Azure Dream yacht">
+              <img loading="lazy" src="../assets/images/yacht-deck.jpg" width="800" height="457" alt="Azure Dream yacht">
             </div>
             <div class="yacht-content">
               <h3>Azure Dream</h3>
@@ -199,7 +240,7 @@
           <!-- Yacht 3 -->
           <div class="yacht-card reveal stagger-2" data-cursor-text="Charter">
             <div class="yacht-image">
-              <img src="../assets/images/cruise-mediterranean.jpg" alt="Golden Horizon yacht">
+              <img loading="lazy" src="../assets/images/cruise-mediterranean.jpg" alt="Golden Horizon yacht">
             </div>
             <div class="yacht-content">
               <h3>Golden Horizon</h3>
@@ -245,7 +286,7 @@
           <div class="tab-content active" id="mediterranean">
             <div class="itinerary-card reveal">
               <div class="itinerary-image">
-                <img src="../assets/images/cruise-mediterranean.jpg" alt="Mediterranean cruise">
+                <img loading="lazy" src="../assets/images/cruise-mediterranean.jpg" alt="Mediterranean cruise">
               </div>
               <div class="itinerary-details">
                 <span class="badge badge-azure mb-4">7 Days</span>
@@ -272,7 +313,7 @@
           <div class="tab-content" id="caribbean">
             <div class="itinerary-card">
               <div class="itinerary-image">
-                <img src="../assets/images/private-island.jpg" alt="Caribbean cruise">
+                <img loading="lazy" src="../assets/images/private-island.jpg" alt="Caribbean cruise">
               </div>
               <div class="itinerary-details">
                 <span class="badge badge-azure mb-4">10 Days</span>
@@ -299,7 +340,7 @@
           <div class="tab-content" id="bespoke">
             <div class="itinerary-card">
               <div class="itinerary-image">
-                <img src="../assets/images/destination-turkey.jpg" alt="Bespoke cruise">
+                <img loading="lazy" src="../assets/images/destination-turkey.jpg" alt="Bespoke cruise">
               </div>
               <div class="itinerary-details">
                 <span class="badge badge-vvip mb-4">Custom Duration</span>
@@ -387,7 +428,7 @@
           </div>
           
           <div class="amenities-image reveal-right">
-            <img src="../assets/images/yacht-deck.jpg" alt="Yacht amenities">
+            <img loading="lazy" src="../assets/images/yacht-deck.jpg" width="800" height="457" alt="Yacht amenities">
           </div>
         </div>
       </div>
@@ -411,7 +452,7 @@
             </div>
           </div>
           <div class="cta-image">
-            <img src="../assets/images/hero-yacht.jpg" alt="Luxury yacht">
+            <img loading="lazy" src="../assets/images/hero-yacht.jpg" alt="Luxury yacht">
           </div>
         </div>
       </div>
@@ -424,7 +465,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="footer-logo"><img src="../barrik-logo-blue.png" alt="Baarik Travel" height="40" style="display:block;"></div>
-          <p class="footer-tagline">Premium travel for families who value quality. TICO-registered, proudly Canadian.</p>
+          <p class="footer-tagline">Premium travel for families who value quality. TICO registration pending, proudly Canadian.</p>
           <div class="tico-badge">
             <svg viewBox="0 0 48 32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect x="2" y="2" width="44" height="28" rx="4" stroke="#F1C40F" stroke-width="2"/>
@@ -435,7 +476,7 @@
         </div>
 
         <div class="footer-column">
-          <h4 class="footer-heading">Experiences</h4>
+          <p class="footer-heading">Experiences</p>
           <ul class="footer-links">
             <li><a href="/cruises/">Luxury Cruises</a></li>
             <li><a href="/weddings/">Destination Weddings</a></li>
@@ -446,7 +487,7 @@
         </div>
 
         <div class="footer-column">
-          <h4 class="footer-heading">Company</h4>
+          <p class="footer-heading">Company</p>
           <ul class="footer-links">
             <li><a href="/about/">About Us</a></li>
             <li><a href="/journal/">Journal</a></li>
@@ -457,7 +498,7 @@
         </div>
 
         <div class="footer-column">
-          <h4 class="footer-heading">Connect</h4>
+          <p class="footer-heading">Connect</p>
           <ul class="footer-links">
             <li><a href="https://wa.me/16472497545" target="_blank">WhatsApp</a></li>
             <li><a href="#" data-coming-soon>Instagram</a></li>

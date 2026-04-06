@@ -4,21 +4,21 @@
   <!-- Core pages -->
   <url>
     <loc>https://holidays.baariktravel.ca/</loc>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
     <loc>https://holidays.baariktravel.ca/about/</loc>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://holidays.baariktravel.ca/contact/</loc>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -26,42 +26,50 @@
   <!-- Experience pages -->
   <url>
     <loc>https://holidays.baariktravel.ca/cruises/</loc>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://holidays.baariktravel.ca/weddings/</loc>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://holidays.baariktravel.ca/packages/</loc>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://holidays.baariktravel.ca/packages/leisure.html</loc>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://holidays.baariktravel.ca/packages/corporate.html</loc>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://holidays.baariktravel.ca/bespoke/</loc>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-04-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Guides -->
+  <url>
+    <loc>https://holidays.baariktravel.ca/guides.html</loc>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -69,49 +77,49 @@
   <!-- Journal -->
   <url>
     <loc>https://holidays.baariktravel.ca/journal/</loc>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://holidays.baariktravel.ca/journal/dubai-halal-luxury-guide.html</loc>
-    <lastmod>2026-03-15</lastmod>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://holidays.baariktravel.ca/journal/destination-wedding-timeline.html</loc>
-    <lastmod>2026-02-28</lastmod>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://holidays.baariktravel.ca/journal/mediterranean-yacht-itinerary.html</loc>
-    <lastmod>2026-02-10</lastmod>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://holidays.baariktravel.ca/journal/maldives-halal-resorts.html</loc>
-    <lastmod>2026-01-25</lastmod>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://holidays.baariktravel.ca/journal/travel-done-right.html</loc>
-    <lastmod>2026-01-12</lastmod>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://holidays.baariktravel.ca/journal/moroccan-palace-weddings.html</loc>
-    <lastmod>2025-12-28</lastmod>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -119,21 +127,21 @@
   <!-- SEO gap pages (not in nav) -->
   <url>
     <loc>https://holidays.baariktravel.ca/halal-friendly-vacations.html</loc>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://holidays.baariktravel.ca/eid-travel-packages.html</loc>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://holidays.baariktravel.ca/ramadan-travel.html</loc>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -141,14 +149,14 @@
   <!-- Legal -->
   <url>
     <loc>https://holidays.baariktravel.ca/privacy.html</loc>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
 
   <url>
     <loc>https://holidays.baariktravel.ca/terms.html</loc>
-    <lastmod>2026-03-27</lastmod>
+    <lastmod>2026-04-07</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
