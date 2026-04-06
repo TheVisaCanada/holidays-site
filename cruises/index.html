@@ -18,7 +18,8 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap"></noscript>
   
   <!-- Styles -->
   <link rel="stylesheet" href="../assets/css/main.css">
@@ -26,7 +27,6 @@
   <!-- GSAP -->
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/lenis@1.0.42/bundled/lenis.min.js"></script>
 
   <!-- JSON-LD -->
   <script type="application/ld+json">
@@ -154,7 +154,7 @@
     <!-- Hero Section -->
     <section class="section section-hero" id="hero">
       <div class="hero-bg">
-        <img src="../assets/images/hero-yacht.jpg" alt="Mega yacht cruising" class="image-bg parallax-bg">
+        <img src="../assets/images/hero-yacht.jpg" alt="Mega yacht cruising" class="image-bg parallax-bg" width="1200" height="675">
         <div class="video-overlay"></div>
       </div>
       
@@ -183,7 +183,7 @@
           <!-- Yacht 1 -->
           <div class="yacht-card reveal" data-cursor-text="Charter">
             <div class="yacht-image">
-              <img loading="lazy" src="../assets/images/hero-yacht.jpg" alt="Serenity mega yacht">
+              <img loading="lazy" src="../assets/images/hero-yacht.jpg" alt="Serenity mega yacht" width="1200" height="675">
               <div class="yacht-badge">
                 <span class="badge badge-vvip">Flagship</span>
               </div>
@@ -213,7 +213,7 @@
           <!-- Yacht 2 -->
           <div class="yacht-card reveal stagger-1" data-cursor-text="Charter">
             <div class="yacht-image">
-              <img loading="lazy" src="../assets/images/yacht-deck.jpg" width="800" height="457" alt="Azure Dream yacht">
+              <img loading="lazy" src="../assets/images/yacht-deck.jpg" alt="Azure Dream yacht" width="700" height="400">
             </div>
             <div class="yacht-content">
               <h3>Azure Dream</h3>
@@ -240,7 +240,7 @@
           <!-- Yacht 3 -->
           <div class="yacht-card reveal stagger-2" data-cursor-text="Charter">
             <div class="yacht-image">
-              <img loading="lazy" src="../assets/images/cruise-mediterranean.jpg" alt="Golden Horizon yacht">
+              <img loading="lazy" src="../assets/images/cruise-mediterranean.jpg" alt="Golden Horizon yacht" width="600" height="400">
             </div>
             <div class="yacht-content">
               <h3>Golden Horizon</h3>
@@ -286,7 +286,7 @@
           <div class="tab-content active" id="mediterranean">
             <div class="itinerary-card reveal">
               <div class="itinerary-image">
-                <img loading="lazy" src="../assets/images/cruise-mediterranean.jpg" alt="Mediterranean cruise">
+                <img loading="lazy" src="../assets/images/cruise-mediterranean.jpg" alt="Mediterranean cruise" width="600" height="400">
               </div>
               <div class="itinerary-details">
                 <span class="badge badge-azure mb-4">7 Days</span>
@@ -313,7 +313,7 @@
           <div class="tab-content" id="caribbean">
             <div class="itinerary-card">
               <div class="itinerary-image">
-                <img loading="lazy" src="../assets/images/private-island.jpg" alt="Caribbean cruise">
+                <img loading="lazy" src="../assets/images/private-island.jpg" alt="Caribbean cruise" width="600" height="400">
               </div>
               <div class="itinerary-details">
                 <span class="badge badge-azure mb-4">10 Days</span>
@@ -340,7 +340,7 @@
           <div class="tab-content" id="bespoke">
             <div class="itinerary-card">
               <div class="itinerary-image">
-                <img loading="lazy" src="../assets/images/destination-turkey.jpg" alt="Bespoke cruise">
+                <img loading="lazy" src="../assets/images/destination-turkey.jpg" alt="Bespoke cruise" width="600" height="400">
               </div>
               <div class="itinerary-details">
                 <span class="badge badge-vvip mb-4">Custom Duration</span>
@@ -428,7 +428,7 @@
           </div>
           
           <div class="amenities-image reveal-right">
-            <img loading="lazy" src="../assets/images/yacht-deck.jpg" width="800" height="457" alt="Yacht amenities">
+            <img loading="lazy" src="../assets/images/yacht-deck.jpg" alt="Yacht amenities" width="700" height="400">
           </div>
         </div>
       </div>
@@ -452,7 +452,7 @@
             </div>
           </div>
           <div class="cta-image">
-            <img loading="lazy" src="../assets/images/hero-yacht.jpg" alt="Luxury yacht">
+            <img loading="lazy" src="../assets/images/hero-yacht.jpg" alt="Luxury yacht" width="1200" height="675">
           </div>
         </div>
       </div>

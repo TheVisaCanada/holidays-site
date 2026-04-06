@@ -40,7 +40,8 @@
   <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
   
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap"></noscript>
   
   <!-- Styles -->
     <link rel="stylesheet" href="assets/css/main.css">
@@ -48,7 +49,8 @@
   <!-- GSAP -->
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/lenis@1.0.42/bundled/lenis.min.js"></script>
+
+  <link rel="preload" as="image" href="assets/images/hero-yacht.jpg" fetchpriority="high">
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏝️</text></svg>">
@@ -221,12 +223,13 @@
   </div>
 
   <main style="padding-top: 80px;">
+    <img src="assets/images/hero-yacht.jpg" alt="" fetchpriority="high" style="position:absolute;width:0;height:0;overflow:hidden;opacity:0;pointer-events:none;" aria-hidden="true" width="1200" height="675">
     <!-- Hero Section -->
     <section class="section section-hero" id="hero">
       <div class="hero-bg">
-        <video class="hero-vid active" id="vid-0" src="assets/videos/hero-cruise-web.mp4" poster="assets/images/hero-yacht.jpg" preload="metadata" muted playsinline autoplay></video>
-        <video class="hero-vid" id="vid-1" data-src="assets/videos/hero-beach-web.mp4" poster="assets/images/hero-maldives.jpg" preload="none" muted playsinline></video>
-        <video class="hero-vid" id="vid-2" data-src="assets/videos/hero-wedding-web.mp4" poster="assets/images/wedding-beach.jpg" preload="none" muted playsinline></video>
+        <video class="hero-vid active" id="vid-0" src="assets/videos/hero-cruise-web.mp4" poster="assets/images/hero-yacht.jpg" preload="none" muted playsinline autoplay width="100%" height="100%" style="position:absolute;top:0;left:0;width:100%;height:100%;"></video>
+        <video class="hero-vid" id="vid-1" data-src="assets/videos/hero-beach-web.mp4" poster="assets/images/hero-maldives.jpg" preload="none" muted playsinline width="100%" height="100%" style="position:absolute;top:0;left:0;width:100%;height:100%;"></video>
+        <video class="hero-vid" id="vid-2" data-src="assets/videos/hero-wedding-web.mp4" poster="assets/images/wedding-beach.jpg" preload="none" muted playsinline width="100%" height="100%" style="position:absolute;top:0;left:0;width:100%;height:100%;"></video>
         <div class="video-overlay"></div>
       </div>
 
@@ -264,7 +267,7 @@
           <!-- Leisure Path -->
           <a href="/packages/leisure.html" class="path-card reveal stagger-1" data-cursor-text="Discover">
             <div class="path-image">
-              <img loading="lazy" src="assets/images/hero-maldives.jpg" alt="Maldives overwater villa">
+              <img loading="lazy" src="assets/images/hero-maldives.jpg" alt="Maldives overwater villa" width="800" height="500">
               <div class="path-overlay"></div>
             </div>
             <div class="path-content">
@@ -278,7 +281,7 @@
           <!-- Wedding Path -->
           <a href="/weddings/" class="path-card reveal stagger-2" data-cursor-text="Dream">
             <div class="path-image">
-              <img loading="lazy" src="assets/images/wedding-beach.jpg" alt="Beach wedding ceremony">
+              <img loading="lazy" src="assets/images/wedding-beach.jpg" alt="Beach wedding ceremony" width="600" height="400">
               <div class="path-overlay"></div>
             </div>
             <div class="path-content">
@@ -292,7 +295,7 @@
           <!-- Corporate Path -->
           <a href="/packages/corporate.html" class="path-card reveal stagger-3" data-cursor-text="Elevate">
             <div class="path-image">
-              <img loading="lazy" src="assets/images/corporate-retreat.jpg" alt="Corporate retreat">
+              <img loading="lazy" src="assets/images/corporate-retreat.jpg" alt="Corporate retreat" width="600" height="400">
               <div class="path-overlay"></div>
             </div>
             <div class="path-content">
@@ -317,7 +320,7 @@
         <div class="destinations-grid">
           <!-- Maldives -->
           <div class="destination-card large reveal" data-cursor-text="Explore">
-            <img loading="lazy" src="assets/images/hero-maldives.jpg" alt="Maldives">
+            <img loading="lazy" src="assets/images/hero-maldives.jpg" alt="Maldives" width="800" height="500">
             <div class="destination-content">
               <span class="badge badge-gold">Most Popular</span>
               <h3>Maldives</h3>
@@ -327,7 +330,7 @@
           
           <!-- Dubai -->
           <div class="destination-card reveal stagger-1" data-cursor-text="Explore">
-            <img loading="lazy" src="assets/images/destination-dubai.jpg" alt="Dubai">
+            <img loading="lazy" src="assets/images/destination-dubai.jpg" alt="Dubai" width="600" height="400">
             <div class="destination-content">
               <h3>Dubai</h3>
               <p>Urban luxury redefined</p>
@@ -336,7 +339,7 @@
           
           <!-- Turkey -->
           <div class="destination-card reveal stagger-2" data-cursor-text="Explore">
-            <img loading="lazy" src="assets/images/destination-turkey.jpg" alt="Turkey">
+            <img loading="lazy" src="assets/images/destination-turkey.jpg" alt="Turkey" width="600" height="400">
             <div class="destination-content">
               <h3>Turkey</h3>
               <p>Where East meets West</p>
@@ -345,7 +348,7 @@
           
           <!-- Switzerland -->
           <div class="destination-card reveal stagger-3" data-cursor-text="Explore">
-            <img loading="lazy" src="assets/images/destination-switzerland.jpg" alt="Switzerland">
+            <img loading="lazy" src="assets/images/destination-switzerland.jpg" alt="Switzerland" width="600" height="400">
             <div class="destination-content">
               <h3>Switzerland</h3>
               <p>Alpine elegance</p>
@@ -387,7 +390,7 @@
           </div>
           
           <div class="fleet-image reveal-right">
-            <img loading="lazy" src="assets/images/yacht-deck.jpg" width="800" height="457" alt="Luxury yacht deck">
+            <img loading="lazy" src="assets/images/yacht-deck.jpg" alt="Luxury yacht deck" width="700" height="400">
             <div class="fleet-floating-card">
               <span class="badge badge-vvip">VVIP Experience</span>
               <p>"The most luxurious week of our lives"</p>
@@ -409,7 +412,7 @@
         
         <div class="wedding-categories">
           <div class="wedding-card reveal" data-cursor-text="Dream">
-            <img loading="lazy" src="assets/images/wedding-beach.jpg" alt="Beach wedding">
+            <img loading="lazy" src="assets/images/wedding-beach.jpg" alt="Beach wedding" width="600" height="400">
             <div class="wedding-content">
               <h3>Beach</h3>
               <p>Golden sands, ocean vows</p>
@@ -417,7 +420,7 @@
           </div>
           
           <div class="wedding-card reveal stagger-1" data-cursor-text="Dream">
-            <img loading="lazy" src="assets/images/wedding-palace.jpg" alt="Palace wedding">
+            <img loading="lazy" src="assets/images/wedding-palace.jpg" alt="Palace wedding" width="600" height="400">
             <div class="wedding-content">
               <h3>Palace</h3>
               <p>Royal elegance, timeless beauty</p>
@@ -425,7 +428,7 @@
           </div>
           
           <div class="wedding-card reveal stagger-2" data-cursor-text="Dream">
-            <img loading="lazy" src="assets/images/wedding-mountain.jpg" alt="Mountain wedding">
+            <img loading="lazy" src="assets/images/wedding-mountain.jpg" alt="Mountain wedding" width="600" height="400">
             <div class="wedding-content">
               <h3>Mountain</h3>
               <p>Alpine majesty, nature's cathedral</p>
@@ -433,7 +436,7 @@
           </div>
           
           <div class="wedding-card reveal stagger-3" data-cursor-text="Dream">
-            <img loading="lazy" src="assets/images/private-island.jpg" alt="Private island wedding">
+            <img loading="lazy" src="assets/images/private-island.jpg" alt="Private island wedding" width="600" height="400">
             <div class="wedding-content">
               <h3>Private Island</h3>
               <p>Exclusive paradise, just for you</p>
@@ -469,7 +472,7 @@
         
         <div class="journal-grid">
           <article class="journal-card featured reveal" data-cursor-text="Read">
-            <img loading="lazy" src="assets/images/destination-dubai.jpg" alt="Dubai travel guide">
+            <img loading="lazy" src="assets/images/destination-dubai.jpg" alt="Dubai travel guide" width="600" height="400">
             <div class="journal-content">
               <span class="journal-category">Destinations</span>
               <h3>The Complete Guide to Halal-Friendly Luxury in Dubai</h3>
@@ -479,7 +482,7 @@
           </article>
           
           <article class="journal-card reveal stagger-1" data-cursor-text="Read">
-            <img loading="lazy" src="assets/images/wedding-palace.jpg" alt="Wedding planning">
+            <img loading="lazy" src="assets/images/wedding-palace.jpg" alt="Wedding planning" width="600" height="400">
             <div class="journal-content">
               <span class="journal-category">Weddings</span>
               <h3>Planning a Destination Wedding: The 12-Month Timeline</h3>
@@ -488,7 +491,7 @@
           </article>
           
           <article class="journal-card reveal stagger-2" data-cursor-text="Read">
-            <img loading="lazy" src="assets/images/cruise-mediterranean.jpg" alt="Mediterranean cruise">
+            <img loading="lazy" src="assets/images/cruise-mediterranean.jpg" alt="Mediterranean cruise" width="600" height="400">
             <div class="journal-content">
               <span class="journal-category">Cruises</span>
               <h3>Mediterranean by Mega Yacht: The Ultimate Itinerary</h3>
@@ -521,7 +524,7 @@
             </div>
           </div>
           <div class="cta-image">
-            <img loading="lazy" src="assets/images/private-island.jpg" alt="Private island paradise">
+            <img loading="lazy" src="assets/images/private-island.jpg" alt="Private island paradise" width="600" height="400">
           </div>
         </div>
       </div>

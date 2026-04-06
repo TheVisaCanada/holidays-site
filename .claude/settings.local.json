@@ -37,7 +37,18 @@
       "Bash(find C:/Projects/holidays-site/holidays-baarik -name \"*.html\" ! -name \"googlefbb8a8c798efdcd8.html\" -exec sed -i 's|<h4 class=\"\"\"\"footer-heading\"\"\"\">|<p class=\"\"\"\"footer-heading\"\"\"\">|g; s|</h4>|</p>|g' {})",
       "Bash(__NEW_LINE_06491884b88c8f8b__ echo:*)",
       "Bash(wc -l echo \"p footer-heading count:\" grep -rn '<p class=\"\"\"\"footer-heading\"\"\"\">' C:/Projects/holidays-site/holidays-baarik/ --include=\"*.html\")",
-      "Bash(echo \"=== FIX 1: Async CSS remaining ===\" grep -rn 'media=\"\"\"\"print\"\"\"\" onload' C:/Projects/holidays-site/holidays-baarik/ --include=\"*.html\")"
+      "Bash(echo \"=== FIX 1: Async CSS remaining ===\" grep -rn 'media=\"\"\"\"print\"\"\"\" onload' C:/Projects/holidays-site/holidays-baarik/ --include=\"*.html\")",
+      "Bash(git filter-repo:*)",
+      "Bash(bfg --version)",
+      "Bash(pip show:*)",
+      "Bash(pip3 install:*)",
+      "Bash(python3 -m pip install git-filter-repo)",
+      "Bash(head -20 grep -n \"hero-bg\\\\|section#hero\\\\|#hero\\\\|\\\\.hero\\\\b\" index.html)",
+      "Bash(sort -k5 -rh)",
+      "Bash(find C:/Projects/holidays-site/holidays-baarik -name \"*.html\" ! -name \"googlefbb8a8c798efdcd8.html\" -exec sed -i '/cdn.jsdelivr.net\\\\/npm\\\\/lenis@1.0.42\\\\/bundled\\\\/lenis.min.js/d; /cdn.jsdelivr.net\\\\/npm\\\\/@studio-freight\\\\/lenis/d' {})",
+      "Bash(__NEW_LINE_0f246dc0be02ff34__ echo:*)",
+      "Bash(npm install:*)",
+      "Bash(npx terser:*)"
     ]
   }
 }
