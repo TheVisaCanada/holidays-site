@@ -48,7 +48,9 @@
       "Bash(find C:/Projects/holidays-site/holidays-baarik -name \"*.html\" ! -name \"googlefbb8a8c798efdcd8.html\" -exec sed -i '/cdn.jsdelivr.net\\\\/npm\\\\/lenis@1.0.42\\\\/bundled\\\\/lenis.min.js/d; /cdn.jsdelivr.net\\\\/npm\\\\/@studio-freight\\\\/lenis/d' {})",
       "Bash(__NEW_LINE_0f246dc0be02ff34__ echo:*)",
       "Bash(npm install:*)",
-      "Bash(npx terser:*)"
+      "Bash(npx terser:*)",
+      "Bash(find C:/Projects/holidays-site/holidays-baarik -name \"*.html\" ! -name \"googlefbb8a8c798efdcd8.html\" -exec sed -i 's/class=\"\"\"\"nav nav-scrolled\"\"\"\"/class=\"\"\"\"nav\"\"\"\"/g' {})",
+      "Bash(__NEW_LINE_aa0f3dbd797a332c__ echo:*)"
     ]
   }
 }
