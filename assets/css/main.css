@@ -446,16 +446,7 @@ a:hover {
   color: #011627;
 }
 
-.btn-outline-gold {
-  background: transparent;
-  color: #C9A84C;
-  border: 1px solid #C9A84C;
-}
-
-.btn-outline-gold:hover {
-  background: #C9A84C;
-  color: #011627;
-}
+/* .btn-outline-gold removed — use .btn-outline instead (identical styles) */
 
 /* Magnetic Button Effect */
 .btn-magnetic {
