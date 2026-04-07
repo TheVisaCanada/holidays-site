@@ -459,7 +459,7 @@ a:hover {
   border: 1px solid rgba(253, 255, 252, 0.08);
   border-radius: 4px;
   overflow: hidden;
-  transition: all var(--transition-slow);
+  transition: background-color var(--transition-slow), border-color var(--transition-slow), transform var(--transition-slow), box-shadow var(--transition-slow);
 }
 
 .card:hover {
@@ -747,7 +747,7 @@ select {
   width: 24px;
   height: 2px;
   background: var(--champagne-white);
-  transition: all var(--transition-base);
+  transition: transform var(--transition-base), opacity var(--transition-base), background-color var(--transition-base);
 }
 
 .mobile-menu {
