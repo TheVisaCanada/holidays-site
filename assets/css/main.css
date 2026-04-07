@@ -424,12 +424,12 @@ a:hover {
   box-shadow: 0 10px 30px rgba(201, 168, 76, 0.35);
 }
 
-.btn-azure {
+.btn-gold {
   background: #C9A84C;
   color: #011627;
 }
 
-.btn-azure:hover {
+.btn-gold:hover {
   background: #D4B86A;
   transform: translateY(-2px);
   box-shadow: 0 10px 30px rgba(201, 168, 76, 0.35);
