@@ -61,10 +61,10 @@
   --ease-dramatic: cubic-bezier(0.87, 0, 0.13, 1);
   
   /* Transitions */
-  --transition-fast: 0.7s cubic-bezier(0.19, 1, 0.22, 1);
-  --transition-base: 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+  --transition-fast: 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+  --transition-base: 0.4s cubic-bezier(0.19, 1, 0.22, 1);
   --transition-slow: 0.7s cubic-bezier(0.19, 1, 0.22, 1);
-  --transition-dramatic: 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+  --transition-dramatic: 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 /* ----------------------------------------
