@@ -607,9 +607,12 @@ select {
   text-transform: uppercase;
   color: #fff;
   position: relative;
-  padding-bottom: 2px;
+  padding: 11px 4px;
   border-bottom: 1px solid transparent;
   transition: color 0.3s ease, border-color 0.3s ease;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
 }
 
 .nav-link:hover {
@@ -637,6 +640,9 @@ select {
   margin-right: 28px;
   transition: color 0.3s ease;
   white-space: nowrap;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
 }
 
 .nav-phone:hover {
